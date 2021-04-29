@@ -1,0 +1,1 @@
+/usr/bin/c++    -rdynamic CMakeFiles/Demo.dir/test.cpp.o  -o Demo -Wl,-rpath,/usr/local/lib crypto/libCryptoFunc.a /usr/local/lib/libssl.so /usr/local/lib/libcrypto.so 

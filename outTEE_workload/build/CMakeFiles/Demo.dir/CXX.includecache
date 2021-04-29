@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../crypto/crypto_helper.h
+string
+-
+
+/home/guotiezheng/avalon/outTEE_workload.b/test.cpp
+string
+-
+fstream
+-
+iostream
+-
+stdio.h
+-
+crypto_helper.h
+/home/guotiezheng/avalon/outTEE_workload.b/crypto_helper.h
+

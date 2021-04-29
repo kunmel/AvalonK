@@ -1,0 +1,6 @@
+/home/guotiezheng/avalon/outTEE_workload.b/build/CMakeFiles/rebuild_cache.dir
+/home/guotiezheng/avalon/outTEE_workload.b/build/CMakeFiles/Demo.dir
+/home/guotiezheng/avalon/outTEE_workload.b/build/CMakeFiles/edit_cache.dir
+/home/guotiezheng/avalon/outTEE_workload.b/build/crypto/CMakeFiles/rebuild_cache.dir
+/home/guotiezheng/avalon/outTEE_workload.b/build/crypto/CMakeFiles/CryptoFunc.dir
+/home/guotiezheng/avalon/outTEE_workload.b/build/crypto/CMakeFiles/edit_cache.dir

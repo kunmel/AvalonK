@@ -1,0 +1,2 @@
+/usr/bin/ar qc ../../libuavalon-parson.a  CMakeFiles/uavalon-parson.dir/parson.cpp.o
+/usr/bin/ranlib ../../libuavalon-parson.a

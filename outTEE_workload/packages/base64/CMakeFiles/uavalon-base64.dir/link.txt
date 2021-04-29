@@ -1,0 +1,2 @@
+/usr/bin/ar qc ../../libuavalon-base64.a  CMakeFiles/uavalon-base64.dir/base64.cpp.o
+/usr/bin/ranlib ../../libuavalon-base64.a

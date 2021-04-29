@@ -1,0 +1,2 @@
+/usr/bin/ar qc ../../libtavalon-base64.a  CMakeFiles/tavalon-base64.dir/base64.cpp.o
+/usr/bin/ranlib ../../libtavalon-base64.a

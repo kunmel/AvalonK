@@ -1,0 +1,2 @@
+/usr/bin/ar qc ../../libtavalon-parson.a  CMakeFiles/tavalon-parson.dir/parson.cpp.o
+/usr/bin/ranlib ../../libtavalon-parson.a
