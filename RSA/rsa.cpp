@@ -20,10 +20,10 @@ KEY RSA::GetAllkey()
 	return m_key;
 }
 
-void RSA::EncryptionFile(const char * filename, const char * fileout)//¶ÔÎÄ¼ş½øĞĞ·Ö¿é¼ÓÃÜ
+void RSA::EncryptionFile(const char * filename, const char * fileout)//å¯¹æ–‡ä»¶è¿›è¡Œåˆ†å—åŠ å¯†
 {
-	std::ifstream fin(filename, std::ifstream::binary);//ÒÔ¶ş½øÖÆĞ´ÈëĞÎÊ½´ò¿ªÒ»¸öÎÄ¼ş
-	std::ofstream fout(fileout, std::ofstream::binary);//ÒÔ¶ş½øÖÆ¶Á³öĞÎÊ½´ò¿ªÒ»¸öÎÄ¼ş
+	std::ifstream fin(filename, std::ifstream::binary);//ä»¥äºŒè¿›åˆ¶è¯»å–å½¢å¼æ‰“å¼€ä¸€ä¸ªæ–‡ä»¶
+	std::ofstream fout(fileout, std::ofstream::binary);//ä»¥äºŒè¿›åˆ¶å†™å…¥å½¢å¼æ‰“å¼€ä¸€ä¸ªæ–‡ä»¶
 	if (!fin.is_open())
 	{
 		perror("input file open failed!\n");
@@ -33,7 +33,7 @@ void RSA::EncryptionFile(const char * filename, const char * fileout)//¶ÔÎÄ¼ş½øĞ
 	DataType* bufferout = new DataType[NUM];
 	while (!fin.eof())
 	{
-		fin.read(buffer, NUM);//½«finÖĞµÄÊı¾İ¶Áµ½bufferÖĞ
+		fin.read(buffer, NUM);//å°†finä¸­çš„æ•°æ®è¯»åˆ°bufferä¸­
 		int curNum = fin.gcount();
 		for (int i = 0; i < curNum; i++)
 		{
@@ -48,10 +48,10 @@ void RSA::EncryptionFile(const char * filename, const char * fileout)//¶ÔÎÄ¼ş½øĞ
 	fin.close();
 	fout.close();
 }
-void RSA::DecryptFile(const char * filename, const char * fileout)//¶ÔÎÄ¼ş½øĞĞ·Ö¿é½âÃÜ
+void RSA::DecryptFile(const char * filename, const char * fileout)//å¯¹æ–‡ä»¶è¿›è¡Œåˆ†å—è§£å¯†
 {
-	std::ifstream fin(filename, std::ifstream::binary);//ÒÔ¶ş½øÖÆĞ´ÈëĞÎÊ½´ò¿ªÒ»¸öÎÄ¼ş
-	std::ofstream fout(fileout, std::ofstream::binary);//ÒÔ¶ş½øÖÆ¶Á³öĞÎÊ½´ò¿ªÒ»¸öÎÄ¼ş
+	std::ifstream fin(filename, std::ifstream::binary);//ä»¥äºŒè¿›åˆ¶è¯»å–å½¢å¼æ‰“å¼€ä¸€ä¸ªæ–‡ä»¶
+	std::ofstream fout(fileout, std::ofstream::binary);//ä»¥äºŒè¿›åˆ¶å†™å…¥å½¢å¼æ‰“å¼€ä¸€ä¸ªæ–‡ä»¶
 	if (!fin.is_open())
 	{
 		perror("file open failed!\n");
@@ -62,7 +62,7 @@ void RSA::DecryptFile(const char * filename, const char * fileout)//¶ÔÎÄ¼ş½øĞĞ·Ö
 	char* bufferout = new char[NUM];
 	while (!fin.eof())
 	{	
-		fin.read((char*)buffer, NUM * sizeof(DataType));//½«finÖĞµÄÊı¾İ¶Áµ½bufferÖĞ
+		fin.read((char*)buffer, NUM * sizeof(DataType));//å°†finä¸­çš„æ•°æ®è¯»åˆ°bufferä¸­
 		int num = fin.gcount();
 		num /= sizeof(DataType);
 		for (int i = 0; i < num; i++)
@@ -78,10 +78,10 @@ void RSA::DecryptFile(const char * filename, const char * fileout)//¶ÔÎÄ¼ş½øĞĞ·Ö
 	fin.close();
 	fout.close();
 }
-DataType RSA::Prime()//µÃµ½ËØÊı ¡ù
+DataType RSA::Prime()//å¾—åˆ°ç´ æ•° â€»
 {
-	bordm::mt19937 Gen(time(nullptr));//Ëæ»úÊı·¢ÉúÆ÷
-	bordm::uniform_int_distribution<DataType> Breadth(0, DataType(1) << 128);//Ëæ»úÊıµÄ·¶Î§
+	bordm::mt19937 Gen(time(nullptr));//éšæœºæ•°å‘ç”Ÿå™¨
+	bordm::uniform_int_distribution<DataType> Breadth(0, DataType(1) << 128);//éšæœºæ•°çš„èŒƒå›´
 	DataType prime;
 	while (true)
 	{
@@ -91,15 +91,15 @@ DataType RSA::Prime()//µÃµ½ËØÊı ¡ù
 	}
 	return prime;
 }
-DataType RSA::Pkey(DataType prime1, DataType prime2)//¼ÆËãn
+DataType RSA::Pkey(DataType prime1, DataType prime2)//è®¡ç®—n
 {
 	return prime1 * prime2;
 }
-DataType RSA::Orla(DataType p, DataType q)//¼ÆËãf(n)
+DataType RSA::Orla(DataType p, DataType q)//è®¡ç®—f(n)
 {
 	return (p - 1) * (q - 1);
 }
-DataType RSA::Ekey(DataType orla)//¼ÆËã¹«Ô¿e ¡ù
+DataType RSA::Ekey(DataType orla)//è®¡ç®—å…¬é’¥e â€»
 {
 	bordm::mt19937 Gen(time(nullptr));
 	bordm::uniform_int_distribution<DataType> dist(2, orla);
@@ -111,25 +111,25 @@ DataType RSA::Ekey(DataType orla)//¼ÆËã¹«Ô¿e ¡ù
 			return ekey;
 	}
 }
-bool RSA::isPrimeBigInt(DataType data)//ÅĞ¶ÏÒ»¸öÊıÊÇ²»ÊÇËØÊı ¡ù
+bool RSA::isPrimeBigInt(DataType data)//åˆ¤æ–­ä¸€ä¸ªæ•°æ˜¯ä¸æ˜¯ç´ æ•° â€»
 {
 	bordm::mt11213b gen(time(nullptr));
 	if (miller_rabin_test(data, 25, gen))
 	{
-		if (miller_rabin_test((data - 1) / 2, 25, gen))//0.25µÄ25´Î·½µÄ¿ÉÄÜÊÇ´íÎóµÄ
+		if (miller_rabin_test((data - 1) / 2, 25, gen))//0.25çš„25æ¬¡æ–¹çš„å¯èƒ½æ˜¯é”™è¯¯çš„
 		{
 			return true;
 		}
 	}
 	return false;
 }
-DataType RSA::Dkey(DataType orla, DataType ekey)//¼ÆËãË½Ô¿d ¡ù
+DataType RSA::Dkey(DataType orla, DataType ekey)//è®¡ç®—ç§é’¥d â€»
 {
 	DataType x = 0, y = 0;
 	exGcd(ekey, orla, x, y);
 	return (x % orla + orla) % orla;
 }
-DataType RSA::getGcd(DataType data1, DataType data2)//Õ·×ªÏà³ı·¨Çó×î´ó¹«Ô¼Êı(Å·¼¸ÀïµÃËã·¨)
+DataType RSA::getGcd(DataType data1, DataType data2)//è¾—è½¬ç›¸é™¤æ³•æ±‚æœ€å¤§å…¬çº¦æ•°(æ¬§å‡ é‡Œå¾—ç®—æ³•)
 {
 	DataType ret;
 	while (ret = data1 % data2)
@@ -139,7 +139,7 @@ DataType RSA::getGcd(DataType data1, DataType data2)//Õ·×ªÏà³ı·¨Çó×î´ó¹«Ô¼Êı(Å·¼
 	}
 	return data2;
 }
-DataType RSA::exGcd(DataType a, DataType b, DataType& x, DataType& y)//À©Õ¹µÄÅ·¼¸ÀïµÃËã·¨ ¡ù
+DataType RSA::exGcd(DataType a, DataType b, DataType& x, DataType& y)//æ‰©å±•çš„æ¬§å‡ é‡Œå¾—ç®—æ³• â€»
 {
 	if (b == 0)
 	{
@@ -153,7 +153,7 @@ DataType RSA::exGcd(DataType a, DataType b, DataType& x, DataType& y)//À©Õ¹µÄÅ·¼
 	y = x1 - a / b * y1;
 	return gcd;
 }
-DataType RSA::ecrept(DataType data, DataType ekey, DataType pkey)//¼ÓÃÜ¹ı³ÌµÄÄ£ÃİÔËËã:ÃÉ¸çÂíÀûËã·¨¡ù
+DataType RSA::ecrept(DataType data, DataType ekey, DataType pkey)//åŠ å¯†è¿‡ç¨‹çš„æ¨¡å¹‚è¿ç®—:è’™å“¥é©¬åˆ©ç®—æ³•â€»
 {
 	DataType a = data;
 	DataType tmp = 1;
