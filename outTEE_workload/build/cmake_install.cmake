@@ -1,4 +1,4 @@
-# Install script for directory: /home/guotiezheng/avalon/outTEE_workload.b
+# Install script for directory: /home/guotiezheng/avalon/outTEE_workload
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,7 +39,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/guotiezheng/avalon/outTEE_workload.b/build/crypto/cmake_install.cmake")
+  include("/home/guotiezheng/avalon/outTEE_workload/build/crypto/cmake_install.cmake")
 
 endif()
 
@@ -51,5 +51,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/guotiezheng/avalon/outTEE_workload.b/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/guotiezheng/avalon/outTEE_workload/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

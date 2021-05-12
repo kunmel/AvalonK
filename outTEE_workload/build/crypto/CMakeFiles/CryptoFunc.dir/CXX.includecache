@@ -6,19 +6,19 @@
 
 #IncludeRegexTransform: 
 
-/home/guotiezheng/avalon/outTEE_workload.b/crypto/base64.cpp
+/home/guotiezheng/avalon/outTEE_workload/crypto/base64.cpp
 ctype.h
 -
 base64.h
-/home/guotiezheng/avalon/outTEE_workload.b/crypto/base64.h
+/home/guotiezheng/avalon/outTEE_workload/crypto/base64.h
 
-/home/guotiezheng/avalon/outTEE_workload.b/crypto/base64.h
+/home/guotiezheng/avalon/outTEE_workload/crypto/base64.h
 string
 -
 vector
 -
 
-/home/guotiezheng/avalon/outTEE_workload.b/crypto/c11_support.cpp
+/home/guotiezheng/avalon/outTEE_workload/crypto/c11_support.cpp
 stdio.h
 -
 errno.h
@@ -26,9 +26,9 @@ errno.h
 string.h
 -
 c11_support.h
-/home/guotiezheng/avalon/outTEE_workload.b/crypto/c11_support.h
+/home/guotiezheng/avalon/outTEE_workload/crypto/c11_support.h
 
-/home/guotiezheng/avalon/outTEE_workload.b/crypto/c11_support.h
+/home/guotiezheng/avalon/outTEE_workload/crypto/c11_support.h
 stdlib.h
 -
 stdarg.h
@@ -36,29 +36,31 @@ stdarg.h
 string.h
 -
 
-/home/guotiezheng/avalon/outTEE_workload.b/crypto/crypto_helper.cpp
+/home/guotiezheng/avalon/outTEE_workload/crypto/crypto_helper.cpp
 string
 -
 fstream
 -
 iostream
 -
+cstring
+-
 crypto_helper.h
-/home/guotiezheng/avalon/outTEE_workload.b/crypto/crypto_helper.h
+/home/guotiezheng/avalon/outTEE_workload/crypto/crypto_helper.h
 crypto_utils.h
-/home/guotiezheng/avalon/outTEE_workload.b/crypto/crypto_utils.h
+/home/guotiezheng/avalon/outTEE_workload/crypto/crypto_utils.h
 
-/home/guotiezheng/avalon/outTEE_workload.b/crypto/crypto_helper.h
+/home/guotiezheng/avalon/outTEE_workload/crypto/crypto_helper.h
 string
 -
 
-/home/guotiezheng/avalon/outTEE_workload.b/crypto/crypto_shared.h
+/home/guotiezheng/avalon/outTEE_workload/crypto/crypto_shared.h
 openssl/obj_mac.h
 -
 openssl/rsa.h
 -
 
-/home/guotiezheng/avalon/outTEE_workload.b/crypto/crypto_utils.cpp
+/home/guotiezheng/avalon/outTEE_workload/crypto/crypto_utils.cpp
 openssl/err.h
 -
 openssl/rand.h
@@ -66,59 +68,59 @@ openssl/rand.h
 openssl/sha.h
 -
 crypto_shared.h
-/home/guotiezheng/avalon/outTEE_workload.b/crypto/crypto_shared.h
+/home/guotiezheng/avalon/outTEE_workload/crypto/crypto_shared.h
 crypto_utils.h
-/home/guotiezheng/avalon/outTEE_workload.b/crypto/crypto_utils.h
+/home/guotiezheng/avalon/outTEE_workload/crypto/crypto_utils.h
 error.h
-/home/guotiezheng/avalon/outTEE_workload.b/crypto/error.h
+/home/guotiezheng/avalon/outTEE_workload/crypto/error.h
 tcf_error.h
-/home/guotiezheng/avalon/outTEE_workload.b/crypto/tcf_error.h
+/home/guotiezheng/avalon/outTEE_workload/crypto/tcf_error.h
 
-/home/guotiezheng/avalon/outTEE_workload.b/crypto/crypto_utils.h
+/home/guotiezheng/avalon/outTEE_workload/crypto/crypto_utils.h
 vector
 -
 types.h
-/home/guotiezheng/avalon/outTEE_workload.b/crypto/types.h
+/home/guotiezheng/avalon/outTEE_workload/crypto/types.h
 
-/home/guotiezheng/avalon/outTEE_workload.b/crypto/crypto_utils_encrypt.cpp
+/home/guotiezheng/avalon/outTEE_workload/crypto/crypto_utils_encrypt.cpp
 iostream
 -
 crypto_shared.h
-/home/guotiezheng/avalon/outTEE_workload.b/crypto/crypto_shared.h
+/home/guotiezheng/avalon/outTEE_workload/crypto/crypto_shared.h
 crypto_utils.h
-/home/guotiezheng/avalon/outTEE_workload.b/crypto/crypto_utils.h
+/home/guotiezheng/avalon/outTEE_workload/crypto/crypto_utils.h
 error.h
-/home/guotiezheng/avalon/outTEE_workload.b/crypto/error.h
+/home/guotiezheng/avalon/outTEE_workload/crypto/error.h
 tcf_error.h
-/home/guotiezheng/avalon/outTEE_workload.b/crypto/tcf_error.h
+/home/guotiezheng/avalon/outTEE_workload/crypto/tcf_error.h
 hex_string.h
-/home/guotiezheng/avalon/outTEE_workload.b/crypto/hex_string.h
+/home/guotiezheng/avalon/outTEE_workload/crypto/hex_string.h
 utils.h
-/home/guotiezheng/avalon/outTEE_workload.b/crypto/utils.h
+/home/guotiezheng/avalon/outTEE_workload/crypto/utils.h
 skenc.h
-/home/guotiezheng/avalon/outTEE_workload.b/crypto/skenc.h
+/home/guotiezheng/avalon/outTEE_workload/crypto/skenc.h
 types.h
-/home/guotiezheng/avalon/outTEE_workload.b/crypto/types.h
+/home/guotiezheng/avalon/outTEE_workload/crypto/types.h
 
-/home/guotiezheng/avalon/outTEE_workload.b/crypto/error.h
+/home/guotiezheng/avalon/outTEE_workload/crypto/error.h
 stdexcept
 -
 string
 -
 tcf_error.h
-/home/guotiezheng/avalon/outTEE_workload.b/crypto/tcf_error.h
+/home/guotiezheng/avalon/outTEE_workload/crypto/tcf_error.h
 
-/home/guotiezheng/avalon/outTEE_workload.b/crypto/hex_string.cpp
+/home/guotiezheng/avalon/outTEE_workload/crypto/hex_string.cpp
 algorithm
 -
 ctype.h
 -
 hex_string.h
-/home/guotiezheng/avalon/outTEE_workload.b/crypto/hex_string.h
+/home/guotiezheng/avalon/outTEE_workload/crypto/hex_string.h
 error.h
-/home/guotiezheng/avalon/outTEE_workload.b/crypto/error.h
+/home/guotiezheng/avalon/outTEE_workload/crypto/error.h
 
-/home/guotiezheng/avalon/outTEE_workload.b/crypto/hex_string.h
+/home/guotiezheng/avalon/outTEE_workload/crypto/hex_string.h
 stdint.h
 -
 string
@@ -126,23 +128,23 @@ string
 vector
 -
 
-/home/guotiezheng/avalon/outTEE_workload.b/crypto/json_utils.cpp
+/home/guotiezheng/avalon/outTEE_workload/crypto/json_utils.cpp
 error.h
-/home/guotiezheng/avalon/outTEE_workload.b/crypto/error.h
+/home/guotiezheng/avalon/outTEE_workload/crypto/error.h
 tcf_error.h
-/home/guotiezheng/avalon/outTEE_workload.b/crypto/tcf_error.h
+/home/guotiezheng/avalon/outTEE_workload/crypto/tcf_error.h
 json_utils.h
-/home/guotiezheng/avalon/outTEE_workload.b/crypto/json_utils.h
+/home/guotiezheng/avalon/outTEE_workload/crypto/json_utils.h
 
-/home/guotiezheng/avalon/outTEE_workload.b/crypto/json_utils.h
+/home/guotiezheng/avalon/outTEE_workload/crypto/json_utils.h
 types.h
-/home/guotiezheng/avalon/outTEE_workload.b/crypto/types.h
+/home/guotiezheng/avalon/outTEE_workload/crypto/types.h
 parson.h
-/home/guotiezheng/avalon/outTEE_workload.b/crypto/parson.h
+/home/guotiezheng/avalon/outTEE_workload/crypto/parson.h
 
-/home/guotiezheng/avalon/outTEE_workload.b/crypto/parson.cpp
+/home/guotiezheng/avalon/outTEE_workload/crypto/parson.cpp
 parson.h
-/home/guotiezheng/avalon/outTEE_workload.b/crypto/parson.h
+/home/guotiezheng/avalon/outTEE_workload/crypto/parson.h
 stdio.h
 -
 stdlib.h
@@ -154,13 +156,13 @@ ctype.h
 math.h
 -
 
-/home/guotiezheng/avalon/outTEE_workload.b/crypto/parson.h
+/home/guotiezheng/avalon/outTEE_workload/crypto/parson.h
 stddef.h
 -
 
-/home/guotiezheng/avalon/outTEE_workload.b/crypto/pkenc.h
+/home/guotiezheng/avalon/outTEE_workload/crypto/pkenc.h
 
-/home/guotiezheng/avalon/outTEE_workload.b/crypto/pkenc_private_key.cpp
+/home/guotiezheng/avalon/outTEE_workload/crypto/pkenc_private_key.cpp
 openssl/err.h
 -
 openssl/pem.h
@@ -168,41 +170,41 @@ openssl/pem.h
 memory
 -
 crypto_shared.h
-/home/guotiezheng/avalon/outTEE_workload.b/crypto/crypto_shared.h
+/home/guotiezheng/avalon/outTEE_workload/crypto/crypto_shared.h
 error.h
-/home/guotiezheng/avalon/outTEE_workload.b/crypto/error.h
+/home/guotiezheng/avalon/outTEE_workload/crypto/error.h
 hex_string.h
-/home/guotiezheng/avalon/outTEE_workload.b/crypto/hex_string.h
+/home/guotiezheng/avalon/outTEE_workload/crypto/hex_string.h
 pkenc.h
-/home/guotiezheng/avalon/outTEE_workload.b/crypto/pkenc.h
+/home/guotiezheng/avalon/outTEE_workload/crypto/pkenc.h
 pkenc_public_key.h
-/home/guotiezheng/avalon/outTEE_workload.b/crypto/pkenc_public_key.h
+/home/guotiezheng/avalon/outTEE_workload/crypto/pkenc_public_key.h
 pkenc_private_key.h
-/home/guotiezheng/avalon/outTEE_workload.b/crypto/pkenc_private_key.h
+/home/guotiezheng/avalon/outTEE_workload/crypto/pkenc_private_key.h
 
-/home/guotiezheng/avalon/outTEE_workload.b/crypto/pkenc_private_key.h
+/home/guotiezheng/avalon/outTEE_workload/crypto/pkenc_private_key.h
 string
 -
 vector
 -
 types.h
-/home/guotiezheng/avalon/outTEE_workload.b/crypto/types.h
+/home/guotiezheng/avalon/outTEE_workload/crypto/types.h
 
-/home/guotiezheng/avalon/outTEE_workload.b/crypto/pkenc_private_key_common.cpp
+/home/guotiezheng/avalon/outTEE_workload/crypto/pkenc_private_key_common.cpp
 crypto_shared.h
-/home/guotiezheng/avalon/outTEE_workload.b/crypto/crypto_shared.h
+/home/guotiezheng/avalon/outTEE_workload/crypto/crypto_shared.h
 error.h
-/home/guotiezheng/avalon/outTEE_workload.b/crypto/error.h
+/home/guotiezheng/avalon/outTEE_workload/crypto/error.h
 hex_string.h
-/home/guotiezheng/avalon/outTEE_workload.b/crypto/hex_string.h
+/home/guotiezheng/avalon/outTEE_workload/crypto/hex_string.h
 pkenc.h
-/home/guotiezheng/avalon/outTEE_workload.b/crypto/pkenc.h
+/home/guotiezheng/avalon/outTEE_workload/crypto/pkenc.h
 pkenc_public_key.h
-/home/guotiezheng/avalon/outTEE_workload.b/crypto/pkenc_public_key.h
+/home/guotiezheng/avalon/outTEE_workload/crypto/pkenc_public_key.h
 pkenc_private_key.h
-/home/guotiezheng/avalon/outTEE_workload.b/crypto/pkenc_private_key.h
+/home/guotiezheng/avalon/outTEE_workload/crypto/pkenc_private_key.h
 
-/home/guotiezheng/avalon/outTEE_workload.b/crypto/pkenc_public_key.cpp
+/home/guotiezheng/avalon/outTEE_workload/crypto/pkenc_public_key.cpp
 openssl/err.h
 -
 openssl/pem.h
@@ -210,41 +212,41 @@ openssl/pem.h
 memory
 -
 crypto_shared.h
-/home/guotiezheng/avalon/outTEE_workload.b/crypto/crypto_shared.h
+/home/guotiezheng/avalon/outTEE_workload/crypto/crypto_shared.h
 error.h
-/home/guotiezheng/avalon/outTEE_workload.b/crypto/error.h
+/home/guotiezheng/avalon/outTEE_workload/crypto/error.h
 hex_string.h
-/home/guotiezheng/avalon/outTEE_workload.b/crypto/hex_string.h
+/home/guotiezheng/avalon/outTEE_workload/crypto/hex_string.h
 pkenc.h
-/home/guotiezheng/avalon/outTEE_workload.b/crypto/pkenc.h
+/home/guotiezheng/avalon/outTEE_workload/crypto/pkenc.h
 pkenc_private_key.h
-/home/guotiezheng/avalon/outTEE_workload.b/crypto/pkenc_private_key.h
+/home/guotiezheng/avalon/outTEE_workload/crypto/pkenc_private_key.h
 pkenc_public_key.h
-/home/guotiezheng/avalon/outTEE_workload.b/crypto/pkenc_public_key.h
+/home/guotiezheng/avalon/outTEE_workload/crypto/pkenc_public_key.h
 
-/home/guotiezheng/avalon/outTEE_workload.b/crypto/pkenc_public_key.h
+/home/guotiezheng/avalon/outTEE_workload/crypto/pkenc_public_key.h
 string
 -
 vector
 -
 types.h
-/home/guotiezheng/avalon/outTEE_workload.b/crypto/types.h
+/home/guotiezheng/avalon/outTEE_workload/crypto/types.h
 
-/home/guotiezheng/avalon/outTEE_workload.b/crypto/pkenc_public_key_common.cpp
+/home/guotiezheng/avalon/outTEE_workload/crypto/pkenc_public_key_common.cpp
 crypto_shared.h
-/home/guotiezheng/avalon/outTEE_workload.b/crypto/crypto_shared.h
+/home/guotiezheng/avalon/outTEE_workload/crypto/crypto_shared.h
 error.h
-/home/guotiezheng/avalon/outTEE_workload.b/crypto/error.h
+/home/guotiezheng/avalon/outTEE_workload/crypto/error.h
 hex_string.h
-/home/guotiezheng/avalon/outTEE_workload.b/crypto/hex_string.h
+/home/guotiezheng/avalon/outTEE_workload/crypto/hex_string.h
 pkenc.h
-/home/guotiezheng/avalon/outTEE_workload.b/crypto/pkenc.h
+/home/guotiezheng/avalon/outTEE_workload/crypto/pkenc.h
 pkenc_public_key.h
-/home/guotiezheng/avalon/outTEE_workload.b/crypto/pkenc_public_key.h
+/home/guotiezheng/avalon/outTEE_workload/crypto/pkenc_public_key.h
 
-/home/guotiezheng/avalon/outTEE_workload.b/crypto/sig.h
+/home/guotiezheng/avalon/outTEE_workload/crypto/sig.h
 
-/home/guotiezheng/avalon/outTEE_workload.b/crypto/sig_private_key.cpp
+/home/guotiezheng/avalon/outTEE_workload/crypto/sig_private_key.cpp
 openssl/pem.h
 -
 openssl/ecdsa.h
@@ -252,19 +254,19 @@ openssl/ecdsa.h
 memory
 -
 crypto_shared.h
-/home/guotiezheng/avalon/outTEE_workload.b/crypto/crypto_shared.h
+/home/guotiezheng/avalon/outTEE_workload/crypto/crypto_shared.h
 error.h
-/home/guotiezheng/avalon/outTEE_workload.b/crypto/error.h
+/home/guotiezheng/avalon/outTEE_workload/crypto/error.h
 hex_string.h
-/home/guotiezheng/avalon/outTEE_workload.b/crypto/hex_string.h
+/home/guotiezheng/avalon/outTEE_workload/crypto/hex_string.h
 sig.h
-/home/guotiezheng/avalon/outTEE_workload.b/crypto/sig.h
+/home/guotiezheng/avalon/outTEE_workload/crypto/sig.h
 sig_public_key.h
-/home/guotiezheng/avalon/outTEE_workload.b/crypto/sig_public_key.h
+/home/guotiezheng/avalon/outTEE_workload/crypto/sig_public_key.h
 sig_private_key.h
-/home/guotiezheng/avalon/outTEE_workload.b/crypto/sig_private_key.h
+/home/guotiezheng/avalon/outTEE_workload/crypto/sig_private_key.h
 
-/home/guotiezheng/avalon/outTEE_workload.b/crypto/sig_private_key.h
+/home/guotiezheng/avalon/outTEE_workload/crypto/sig_private_key.h
 openssl/ec.h
 -
 string
@@ -272,41 +274,41 @@ string
 vector
 -
 types.h
-/home/guotiezheng/avalon/outTEE_workload.b/crypto/types.h
+/home/guotiezheng/avalon/outTEE_workload/crypto/types.h
 
-/home/guotiezheng/avalon/outTEE_workload.b/crypto/sig_private_key_common.cpp
+/home/guotiezheng/avalon/outTEE_workload/crypto/sig_private_key_common.cpp
 crypto_shared.h
-/home/guotiezheng/avalon/outTEE_workload.b/crypto/crypto_shared.h
+/home/guotiezheng/avalon/outTEE_workload/crypto/crypto_shared.h
 error.h
-/home/guotiezheng/avalon/outTEE_workload.b/crypto/error.h
+/home/guotiezheng/avalon/outTEE_workload/crypto/error.h
 hex_string.h
-/home/guotiezheng/avalon/outTEE_workload.b/crypto/hex_string.h
+/home/guotiezheng/avalon/outTEE_workload/crypto/hex_string.h
 sig.h
-/home/guotiezheng/avalon/outTEE_workload.b/crypto/sig.h
+/home/guotiezheng/avalon/outTEE_workload/crypto/sig.h
 sig_public_key.h
-/home/guotiezheng/avalon/outTEE_workload.b/crypto/sig_public_key.h
+/home/guotiezheng/avalon/outTEE_workload/crypto/sig_public_key.h
 sig_private_key.h
-/home/guotiezheng/avalon/outTEE_workload.b/crypto/sig_private_key.h
+/home/guotiezheng/avalon/outTEE_workload/crypto/sig_private_key.h
 
-/home/guotiezheng/avalon/outTEE_workload.b/crypto/sig_public_key.cpp
+/home/guotiezheng/avalon/outTEE_workload/crypto/sig_public_key.cpp
 openssl/pem.h
 -
 memory
 -
 crypto_shared.h
-/home/guotiezheng/avalon/outTEE_workload.b/crypto/crypto_shared.h
+/home/guotiezheng/avalon/outTEE_workload/crypto/crypto_shared.h
 error.h
-/home/guotiezheng/avalon/outTEE_workload.b/crypto/error.h
+/home/guotiezheng/avalon/outTEE_workload/crypto/error.h
 hex_string.h
-/home/guotiezheng/avalon/outTEE_workload.b/crypto/hex_string.h
+/home/guotiezheng/avalon/outTEE_workload/crypto/hex_string.h
 sig.h
-/home/guotiezheng/avalon/outTEE_workload.b/crypto/sig.h
+/home/guotiezheng/avalon/outTEE_workload/crypto/sig.h
 sig_private_key.h
-/home/guotiezheng/avalon/outTEE_workload.b/crypto/sig_private_key.h
+/home/guotiezheng/avalon/outTEE_workload/crypto/sig_private_key.h
 sig_public_key.h
-/home/guotiezheng/avalon/outTEE_workload.b/crypto/sig_public_key.h
+/home/guotiezheng/avalon/outTEE_workload/crypto/sig_public_key.h
 
-/home/guotiezheng/avalon/outTEE_workload.b/crypto/sig_public_key.h
+/home/guotiezheng/avalon/outTEE_workload/crypto/sig_public_key.h
 openssl/ec.h
 -
 string
@@ -314,23 +316,23 @@ string
 vector
 -
 types.h
-/home/guotiezheng/avalon/outTEE_workload.b/crypto/types.h
+/home/guotiezheng/avalon/outTEE_workload/crypto/types.h
 
-/home/guotiezheng/avalon/outTEE_workload.b/crypto/sig_public_key_common.cpp
+/home/guotiezheng/avalon/outTEE_workload/crypto/sig_public_key_common.cpp
 crypto_shared.h
-/home/guotiezheng/avalon/outTEE_workload.b/crypto/crypto_shared.h
+/home/guotiezheng/avalon/outTEE_workload/crypto/crypto_shared.h
 error.h
-/home/guotiezheng/avalon/outTEE_workload.b/crypto/error.h
+/home/guotiezheng/avalon/outTEE_workload/crypto/error.h
 hex_string.h
-/home/guotiezheng/avalon/outTEE_workload.b/crypto/hex_string.h
+/home/guotiezheng/avalon/outTEE_workload/crypto/hex_string.h
 sig.h
-/home/guotiezheng/avalon/outTEE_workload.b/crypto/sig.h
+/home/guotiezheng/avalon/outTEE_workload/crypto/sig.h
 sig_private_key.h
-/home/guotiezheng/avalon/outTEE_workload.b/crypto/sig_private_key.h
+/home/guotiezheng/avalon/outTEE_workload/crypto/sig_private_key.h
 sig_public_key.h
-/home/guotiezheng/avalon/outTEE_workload.b/crypto/sig_public_key.h
+/home/guotiezheng/avalon/outTEE_workload/crypto/sig_public_key.h
 
-/home/guotiezheng/avalon/outTEE_workload.b/crypto/skenc.cpp
+/home/guotiezheng/avalon/outTEE_workload/crypto/skenc.cpp
 memory
 -
 openssl/evp.h
@@ -338,39 +340,39 @@ openssl/evp.h
 iostream
 -
 crypto_shared.h
-/home/guotiezheng/avalon/outTEE_workload.b/crypto/crypto_shared.h
+/home/guotiezheng/avalon/outTEE_workload/crypto/crypto_shared.h
 error.h
-/home/guotiezheng/avalon/outTEE_workload.b/crypto/error.h
+/home/guotiezheng/avalon/outTEE_workload/crypto/error.h
 skenc.h
-/home/guotiezheng/avalon/outTEE_workload.b/crypto/skenc.h
+/home/guotiezheng/avalon/outTEE_workload/crypto/skenc.h
 
-/home/guotiezheng/avalon/outTEE_workload.b/crypto/skenc.h
+/home/guotiezheng/avalon/outTEE_workload/crypto/skenc.h
 string
 -
 vector
 -
 types.h
-/home/guotiezheng/avalon/outTEE_workload.b/crypto/types.h
+/home/guotiezheng/avalon/outTEE_workload/crypto/types.h
 
-/home/guotiezheng/avalon/outTEE_workload.b/crypto/skenc_common.cpp
+/home/guotiezheng/avalon/outTEE_workload/crypto/skenc_common.cpp
 iostream
 -
 crypto_shared.h
-/home/guotiezheng/avalon/outTEE_workload.b/crypto/crypto_shared.h
+/home/guotiezheng/avalon/outTEE_workload/crypto/crypto_shared.h
 crypto_utils.h
-/home/guotiezheng/avalon/outTEE_workload.b/crypto/crypto_utils.h
+/home/guotiezheng/avalon/outTEE_workload/crypto/crypto_utils.h
 error.h
-/home/guotiezheng/avalon/outTEE_workload.b/crypto/error.h
+/home/guotiezheng/avalon/outTEE_workload/crypto/error.h
 utils.h
-/home/guotiezheng/avalon/outTEE_workload.b/crypto/utils.h
+/home/guotiezheng/avalon/outTEE_workload/crypto/utils.h
 skenc.h
-/home/guotiezheng/avalon/outTEE_workload.b/crypto/skenc.h
+/home/guotiezheng/avalon/outTEE_workload/crypto/skenc.h
 
-/home/guotiezheng/avalon/outTEE_workload.b/crypto/tcf_error.h
+/home/guotiezheng/avalon/outTEE_workload/crypto/tcf_error.h
 stdlib.h
 -
 
-/home/guotiezheng/avalon/outTEE_workload.b/crypto/types.cpp
+/home/guotiezheng/avalon/outTEE_workload/crypto/types.cpp
 algorithm
 -
 string
@@ -378,13 +380,13 @@ string
 vector
 -
 types.h
-/home/guotiezheng/avalon/outTEE_workload.b/crypto/types.h
+/home/guotiezheng/avalon/outTEE_workload/crypto/types.h
 base64.h
-/home/guotiezheng/avalon/outTEE_workload.b/crypto/base64.h
+/home/guotiezheng/avalon/outTEE_workload/crypto/base64.h
 hex_string.h
-/home/guotiezheng/avalon/outTEE_workload.b/crypto/hex_string.h
+/home/guotiezheng/avalon/outTEE_workload/crypto/hex_string.h
 
-/home/guotiezheng/avalon/outTEE_workload.b/crypto/types.h
+/home/guotiezheng/avalon/outTEE_workload/crypto/types.h
 stdint.h
 -
 string
@@ -394,23 +396,23 @@ vector
 list
 -
 
-/home/guotiezheng/avalon/outTEE_workload.b/crypto/utils.cpp
+/home/guotiezheng/avalon/outTEE_workload/crypto/utils.cpp
 string
 -
 algorithm
 -
 types.h
-/home/guotiezheng/avalon/outTEE_workload.b/crypto/types.h
+/home/guotiezheng/avalon/outTEE_workload/crypto/types.h
 utils.h
-/home/guotiezheng/avalon/outTEE_workload.b/crypto/utils.h
+/home/guotiezheng/avalon/outTEE_workload/crypto/utils.h
 
-/home/guotiezheng/avalon/outTEE_workload.b/crypto/utils.h
+/home/guotiezheng/avalon/outTEE_workload/crypto/utils.h
 string
 -
 types.h
-/home/guotiezheng/avalon/outTEE_workload.b/crypto/types.h
+/home/guotiezheng/avalon/outTEE_workload/crypto/types.h
 
-/home/guotiezheng/avalon/outTEE_workload.b/crypto/verify_certificate.cpp
+/home/guotiezheng/avalon/outTEE_workload/crypto/verify_certificate.cpp
 assert.h
 -
 stdlib.h
@@ -424,13 +426,13 @@ openssl/pem.h
 openssl/evp.h
 -
 crypto_shared.h
-/home/guotiezheng/avalon/outTEE_workload.b/crypto/crypto_shared.h
+/home/guotiezheng/avalon/outTEE_workload/crypto/crypto_shared.h
 verify_certificate.h
-/home/guotiezheng/avalon/outTEE_workload.b/crypto/verify_certificate.h
+/home/guotiezheng/avalon/outTEE_workload/crypto/verify_certificate.h
 
-/home/guotiezheng/avalon/outTEE_workload.b/crypto/verify_certificate.h
+/home/guotiezheng/avalon/outTEE_workload/crypto/verify_certificate.h
 
-/home/guotiezheng/avalon/outTEE_workload.b/crypto/verify_signature.cpp
+/home/guotiezheng/avalon/outTEE_workload/crypto/verify_signature.cpp
 assert.h
 -
 stdlib.h
@@ -444,13 +446,13 @@ openssl/pem.h
 openssl/evp.h
 -
 crypto_shared.h
-/home/guotiezheng/avalon/outTEE_workload.b/crypto/crypto_shared.h
+/home/guotiezheng/avalon/outTEE_workload/crypto/crypto_shared.h
 base64.h
-/home/guotiezheng/avalon/outTEE_workload.b/crypto/base64.h
+/home/guotiezheng/avalon/outTEE_workload/crypto/base64.h
 verify_signature.h
-/home/guotiezheng/avalon/outTEE_workload.b/crypto/verify_signature.h
+/home/guotiezheng/avalon/outTEE_workload/crypto/verify_signature.h
 
-/home/guotiezheng/avalon/outTEE_workload.b/crypto/verify_signature.h
+/home/guotiezheng/avalon/outTEE_workload/crypto/verify_signature.h
 
 /usr/local/include/openssl/asn1.h
 time.h

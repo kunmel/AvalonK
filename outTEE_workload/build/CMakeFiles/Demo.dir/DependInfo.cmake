@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/guotiezheng/avalon/outTEE_workload.b/test.cpp" "/home/guotiezheng/avalon/outTEE_workload.b/build/CMakeFiles/Demo.dir/test.cpp.o"
+  "/home/guotiezheng/avalon/outTEE_workload/test.cpp" "/home/guotiezheng/avalon/outTEE_workload/build/CMakeFiles/Demo.dir/test.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -17,7 +17,7 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/guotiezheng/avalon/outTEE_workload.b/build/crypto/CMakeFiles/CryptoFunc.dir/DependInfo.cmake"
+  "/home/guotiezheng/avalon/outTEE_workload/build/crypto/CMakeFiles/CryptoFunc.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

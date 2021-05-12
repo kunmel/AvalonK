@@ -1,4 +1,4 @@
-# Install script for directory: /home/guotiezheng/avalon/outTEE_workload.b/crypto
+# Install script for directory: /home/guotiezheng/avalon/outTEE_workload/crypto
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

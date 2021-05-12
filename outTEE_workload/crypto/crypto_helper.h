@@ -16,6 +16,8 @@
 #pragma once
 
 #include <string>
+#define READSIZE 256
+#define WRITESIZE 256
 using namespace std;
 class CryptoHelper {
 public:
@@ -24,12 +26,23 @@ public:
     std::string GenerateKey();
     void SetKey(std::string hex_key);
     string EncryptData(std::string data);
+    string DecryptData(std::string data);
     string WriteFile(std::string data);
     string ReadFile();
     string EncryptFile();
+    string DecryptFile();
     uint32_t DeleteFile();
+    string WriteFileBinary(std::string data);
+    string WriteMidFile(std::string data);
+    string WriteFinalFile(std::string data);
+    string ReadFileBinary();
+    string ReadMidFile();
+    string EncryptFileBinary();
+    string DecryptFileBinary();
 
     std::string file_name;
+    std::string mid_file;
+    std::string final_file;
     std::string hex_key;
 };  // class CryptoHelper
 

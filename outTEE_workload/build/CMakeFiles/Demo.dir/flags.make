@@ -6,5 +6,5 @@ CXX_FLAGS =
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/guotiezheng/avalon/outTEE_workload.b -I/home/guotiezheng/avalon/outTEE_workload.b/crypto -isystem /usr/local/include 
+CXX_INCLUDES = -I/home/guotiezheng/avalon/outTEE_workload -I/home/guotiezheng/avalon/outTEE_workload/crypto -isystem /usr/local/include 
 

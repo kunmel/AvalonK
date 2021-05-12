@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/guotiezheng/avalon/outTEE_workload.b
+CMAKE_SOURCE_DIR = /home/guotiezheng/avalon/outTEE_workload
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/guotiezheng/avalon/outTEE_workload.b/build
+CMAKE_BINARY_DIR = /home/guotiezheng/avalon/outTEE_workload/build
 
 # Include any dependencies generated for this target.
 include crypto/CMakeFiles/CryptoFunc.dir/depend.make
@@ -59,16 +59,16 @@ include crypto/CMakeFiles/CryptoFunc.dir/flags.make
 
 crypto/CMakeFiles/CryptoFunc.dir/base64.cpp.o: crypto/CMakeFiles/CryptoFunc.dir/flags.make
 crypto/CMakeFiles/CryptoFunc.dir/base64.cpp.o: ../crypto/base64.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guotiezheng/avalon/outTEE_workload.b/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object crypto/CMakeFiles/CryptoFunc.dir/base64.cpp.o"
-	cd /home/guotiezheng/avalon/outTEE_workload.b/build/crypto && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/CryptoFunc.dir/base64.cpp.o -c /home/guotiezheng/avalon/outTEE_workload.b/crypto/base64.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guotiezheng/avalon/outTEE_workload/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object crypto/CMakeFiles/CryptoFunc.dir/base64.cpp.o"
+	cd /home/guotiezheng/avalon/outTEE_workload/build/crypto && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/CryptoFunc.dir/base64.cpp.o -c /home/guotiezheng/avalon/outTEE_workload/crypto/base64.cpp
 
 crypto/CMakeFiles/CryptoFunc.dir/base64.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CryptoFunc.dir/base64.cpp.i"
-	cd /home/guotiezheng/avalon/outTEE_workload.b/build/crypto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/guotiezheng/avalon/outTEE_workload.b/crypto/base64.cpp > CMakeFiles/CryptoFunc.dir/base64.cpp.i
+	cd /home/guotiezheng/avalon/outTEE_workload/build/crypto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/guotiezheng/avalon/outTEE_workload/crypto/base64.cpp > CMakeFiles/CryptoFunc.dir/base64.cpp.i
 
 crypto/CMakeFiles/CryptoFunc.dir/base64.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CryptoFunc.dir/base64.cpp.s"
-	cd /home/guotiezheng/avalon/outTEE_workload.b/build/crypto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/guotiezheng/avalon/outTEE_workload.b/crypto/base64.cpp -o CMakeFiles/CryptoFunc.dir/base64.cpp.s
+	cd /home/guotiezheng/avalon/outTEE_workload/build/crypto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/guotiezheng/avalon/outTEE_workload/crypto/base64.cpp -o CMakeFiles/CryptoFunc.dir/base64.cpp.s
 
 crypto/CMakeFiles/CryptoFunc.dir/base64.cpp.o.requires:
 
@@ -83,16 +83,16 @@ crypto/CMakeFiles/CryptoFunc.dir/base64.cpp.o.provides.build: crypto/CMakeFiles/
 
 crypto/CMakeFiles/CryptoFunc.dir/c11_support.cpp.o: crypto/CMakeFiles/CryptoFunc.dir/flags.make
 crypto/CMakeFiles/CryptoFunc.dir/c11_support.cpp.o: ../crypto/c11_support.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guotiezheng/avalon/outTEE_workload.b/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object crypto/CMakeFiles/CryptoFunc.dir/c11_support.cpp.o"
-	cd /home/guotiezheng/avalon/outTEE_workload.b/build/crypto && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/CryptoFunc.dir/c11_support.cpp.o -c /home/guotiezheng/avalon/outTEE_workload.b/crypto/c11_support.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guotiezheng/avalon/outTEE_workload/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object crypto/CMakeFiles/CryptoFunc.dir/c11_support.cpp.o"
+	cd /home/guotiezheng/avalon/outTEE_workload/build/crypto && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/CryptoFunc.dir/c11_support.cpp.o -c /home/guotiezheng/avalon/outTEE_workload/crypto/c11_support.cpp
 
 crypto/CMakeFiles/CryptoFunc.dir/c11_support.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CryptoFunc.dir/c11_support.cpp.i"
-	cd /home/guotiezheng/avalon/outTEE_workload.b/build/crypto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/guotiezheng/avalon/outTEE_workload.b/crypto/c11_support.cpp > CMakeFiles/CryptoFunc.dir/c11_support.cpp.i
+	cd /home/guotiezheng/avalon/outTEE_workload/build/crypto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/guotiezheng/avalon/outTEE_workload/crypto/c11_support.cpp > CMakeFiles/CryptoFunc.dir/c11_support.cpp.i
 
 crypto/CMakeFiles/CryptoFunc.dir/c11_support.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CryptoFunc.dir/c11_support.cpp.s"
-	cd /home/guotiezheng/avalon/outTEE_workload.b/build/crypto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/guotiezheng/avalon/outTEE_workload.b/crypto/c11_support.cpp -o CMakeFiles/CryptoFunc.dir/c11_support.cpp.s
+	cd /home/guotiezheng/avalon/outTEE_workload/build/crypto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/guotiezheng/avalon/outTEE_workload/crypto/c11_support.cpp -o CMakeFiles/CryptoFunc.dir/c11_support.cpp.s
 
 crypto/CMakeFiles/CryptoFunc.dir/c11_support.cpp.o.requires:
 
@@ -107,16 +107,16 @@ crypto/CMakeFiles/CryptoFunc.dir/c11_support.cpp.o.provides.build: crypto/CMakeF
 
 crypto/CMakeFiles/CryptoFunc.dir/crypto_helper.cpp.o: crypto/CMakeFiles/CryptoFunc.dir/flags.make
 crypto/CMakeFiles/CryptoFunc.dir/crypto_helper.cpp.o: ../crypto/crypto_helper.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guotiezheng/avalon/outTEE_workload.b/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object crypto/CMakeFiles/CryptoFunc.dir/crypto_helper.cpp.o"
-	cd /home/guotiezheng/avalon/outTEE_workload.b/build/crypto && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/CryptoFunc.dir/crypto_helper.cpp.o -c /home/guotiezheng/avalon/outTEE_workload.b/crypto/crypto_helper.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guotiezheng/avalon/outTEE_workload/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object crypto/CMakeFiles/CryptoFunc.dir/crypto_helper.cpp.o"
+	cd /home/guotiezheng/avalon/outTEE_workload/build/crypto && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/CryptoFunc.dir/crypto_helper.cpp.o -c /home/guotiezheng/avalon/outTEE_workload/crypto/crypto_helper.cpp
 
 crypto/CMakeFiles/CryptoFunc.dir/crypto_helper.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CryptoFunc.dir/crypto_helper.cpp.i"
-	cd /home/guotiezheng/avalon/outTEE_workload.b/build/crypto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/guotiezheng/avalon/outTEE_workload.b/crypto/crypto_helper.cpp > CMakeFiles/CryptoFunc.dir/crypto_helper.cpp.i
+	cd /home/guotiezheng/avalon/outTEE_workload/build/crypto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/guotiezheng/avalon/outTEE_workload/crypto/crypto_helper.cpp > CMakeFiles/CryptoFunc.dir/crypto_helper.cpp.i
 
 crypto/CMakeFiles/CryptoFunc.dir/crypto_helper.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CryptoFunc.dir/crypto_helper.cpp.s"
-	cd /home/guotiezheng/avalon/outTEE_workload.b/build/crypto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/guotiezheng/avalon/outTEE_workload.b/crypto/crypto_helper.cpp -o CMakeFiles/CryptoFunc.dir/crypto_helper.cpp.s
+	cd /home/guotiezheng/avalon/outTEE_workload/build/crypto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/guotiezheng/avalon/outTEE_workload/crypto/crypto_helper.cpp -o CMakeFiles/CryptoFunc.dir/crypto_helper.cpp.s
 
 crypto/CMakeFiles/CryptoFunc.dir/crypto_helper.cpp.o.requires:
 
@@ -131,16 +131,16 @@ crypto/CMakeFiles/CryptoFunc.dir/crypto_helper.cpp.o.provides.build: crypto/CMak
 
 crypto/CMakeFiles/CryptoFunc.dir/crypto_utils.cpp.o: crypto/CMakeFiles/CryptoFunc.dir/flags.make
 crypto/CMakeFiles/CryptoFunc.dir/crypto_utils.cpp.o: ../crypto/crypto_utils.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guotiezheng/avalon/outTEE_workload.b/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object crypto/CMakeFiles/CryptoFunc.dir/crypto_utils.cpp.o"
-	cd /home/guotiezheng/avalon/outTEE_workload.b/build/crypto && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/CryptoFunc.dir/crypto_utils.cpp.o -c /home/guotiezheng/avalon/outTEE_workload.b/crypto/crypto_utils.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guotiezheng/avalon/outTEE_workload/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object crypto/CMakeFiles/CryptoFunc.dir/crypto_utils.cpp.o"
+	cd /home/guotiezheng/avalon/outTEE_workload/build/crypto && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/CryptoFunc.dir/crypto_utils.cpp.o -c /home/guotiezheng/avalon/outTEE_workload/crypto/crypto_utils.cpp
 
 crypto/CMakeFiles/CryptoFunc.dir/crypto_utils.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CryptoFunc.dir/crypto_utils.cpp.i"
-	cd /home/guotiezheng/avalon/outTEE_workload.b/build/crypto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/guotiezheng/avalon/outTEE_workload.b/crypto/crypto_utils.cpp > CMakeFiles/CryptoFunc.dir/crypto_utils.cpp.i
+	cd /home/guotiezheng/avalon/outTEE_workload/build/crypto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/guotiezheng/avalon/outTEE_workload/crypto/crypto_utils.cpp > CMakeFiles/CryptoFunc.dir/crypto_utils.cpp.i
 
 crypto/CMakeFiles/CryptoFunc.dir/crypto_utils.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CryptoFunc.dir/crypto_utils.cpp.s"
-	cd /home/guotiezheng/avalon/outTEE_workload.b/build/crypto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/guotiezheng/avalon/outTEE_workload.b/crypto/crypto_utils.cpp -o CMakeFiles/CryptoFunc.dir/crypto_utils.cpp.s
+	cd /home/guotiezheng/avalon/outTEE_workload/build/crypto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/guotiezheng/avalon/outTEE_workload/crypto/crypto_utils.cpp -o CMakeFiles/CryptoFunc.dir/crypto_utils.cpp.s
 
 crypto/CMakeFiles/CryptoFunc.dir/crypto_utils.cpp.o.requires:
 
@@ -155,16 +155,16 @@ crypto/CMakeFiles/CryptoFunc.dir/crypto_utils.cpp.o.provides.build: crypto/CMake
 
 crypto/CMakeFiles/CryptoFunc.dir/crypto_utils_encrypt.cpp.o: crypto/CMakeFiles/CryptoFunc.dir/flags.make
 crypto/CMakeFiles/CryptoFunc.dir/crypto_utils_encrypt.cpp.o: ../crypto/crypto_utils_encrypt.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guotiezheng/avalon/outTEE_workload.b/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object crypto/CMakeFiles/CryptoFunc.dir/crypto_utils_encrypt.cpp.o"
-	cd /home/guotiezheng/avalon/outTEE_workload.b/build/crypto && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/CryptoFunc.dir/crypto_utils_encrypt.cpp.o -c /home/guotiezheng/avalon/outTEE_workload.b/crypto/crypto_utils_encrypt.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guotiezheng/avalon/outTEE_workload/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object crypto/CMakeFiles/CryptoFunc.dir/crypto_utils_encrypt.cpp.o"
+	cd /home/guotiezheng/avalon/outTEE_workload/build/crypto && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/CryptoFunc.dir/crypto_utils_encrypt.cpp.o -c /home/guotiezheng/avalon/outTEE_workload/crypto/crypto_utils_encrypt.cpp
 
 crypto/CMakeFiles/CryptoFunc.dir/crypto_utils_encrypt.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CryptoFunc.dir/crypto_utils_encrypt.cpp.i"
-	cd /home/guotiezheng/avalon/outTEE_workload.b/build/crypto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/guotiezheng/avalon/outTEE_workload.b/crypto/crypto_utils_encrypt.cpp > CMakeFiles/CryptoFunc.dir/crypto_utils_encrypt.cpp.i
+	cd /home/guotiezheng/avalon/outTEE_workload/build/crypto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/guotiezheng/avalon/outTEE_workload/crypto/crypto_utils_encrypt.cpp > CMakeFiles/CryptoFunc.dir/crypto_utils_encrypt.cpp.i
 
 crypto/CMakeFiles/CryptoFunc.dir/crypto_utils_encrypt.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CryptoFunc.dir/crypto_utils_encrypt.cpp.s"
-	cd /home/guotiezheng/avalon/outTEE_workload.b/build/crypto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/guotiezheng/avalon/outTEE_workload.b/crypto/crypto_utils_encrypt.cpp -o CMakeFiles/CryptoFunc.dir/crypto_utils_encrypt.cpp.s
+	cd /home/guotiezheng/avalon/outTEE_workload/build/crypto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/guotiezheng/avalon/outTEE_workload/crypto/crypto_utils_encrypt.cpp -o CMakeFiles/CryptoFunc.dir/crypto_utils_encrypt.cpp.s
 
 crypto/CMakeFiles/CryptoFunc.dir/crypto_utils_encrypt.cpp.o.requires:
 
@@ -179,16 +179,16 @@ crypto/CMakeFiles/CryptoFunc.dir/crypto_utils_encrypt.cpp.o.provides.build: cryp
 
 crypto/CMakeFiles/CryptoFunc.dir/hex_string.cpp.o: crypto/CMakeFiles/CryptoFunc.dir/flags.make
 crypto/CMakeFiles/CryptoFunc.dir/hex_string.cpp.o: ../crypto/hex_string.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guotiezheng/avalon/outTEE_workload.b/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object crypto/CMakeFiles/CryptoFunc.dir/hex_string.cpp.o"
-	cd /home/guotiezheng/avalon/outTEE_workload.b/build/crypto && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/CryptoFunc.dir/hex_string.cpp.o -c /home/guotiezheng/avalon/outTEE_workload.b/crypto/hex_string.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guotiezheng/avalon/outTEE_workload/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object crypto/CMakeFiles/CryptoFunc.dir/hex_string.cpp.o"
+	cd /home/guotiezheng/avalon/outTEE_workload/build/crypto && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/CryptoFunc.dir/hex_string.cpp.o -c /home/guotiezheng/avalon/outTEE_workload/crypto/hex_string.cpp
 
 crypto/CMakeFiles/CryptoFunc.dir/hex_string.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CryptoFunc.dir/hex_string.cpp.i"
-	cd /home/guotiezheng/avalon/outTEE_workload.b/build/crypto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/guotiezheng/avalon/outTEE_workload.b/crypto/hex_string.cpp > CMakeFiles/CryptoFunc.dir/hex_string.cpp.i
+	cd /home/guotiezheng/avalon/outTEE_workload/build/crypto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/guotiezheng/avalon/outTEE_workload/crypto/hex_string.cpp > CMakeFiles/CryptoFunc.dir/hex_string.cpp.i
 
 crypto/CMakeFiles/CryptoFunc.dir/hex_string.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CryptoFunc.dir/hex_string.cpp.s"
-	cd /home/guotiezheng/avalon/outTEE_workload.b/build/crypto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/guotiezheng/avalon/outTEE_workload.b/crypto/hex_string.cpp -o CMakeFiles/CryptoFunc.dir/hex_string.cpp.s
+	cd /home/guotiezheng/avalon/outTEE_workload/build/crypto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/guotiezheng/avalon/outTEE_workload/crypto/hex_string.cpp -o CMakeFiles/CryptoFunc.dir/hex_string.cpp.s
 
 crypto/CMakeFiles/CryptoFunc.dir/hex_string.cpp.o.requires:
 
@@ -203,16 +203,16 @@ crypto/CMakeFiles/CryptoFunc.dir/hex_string.cpp.o.provides.build: crypto/CMakeFi
 
 crypto/CMakeFiles/CryptoFunc.dir/json_utils.cpp.o: crypto/CMakeFiles/CryptoFunc.dir/flags.make
 crypto/CMakeFiles/CryptoFunc.dir/json_utils.cpp.o: ../crypto/json_utils.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guotiezheng/avalon/outTEE_workload.b/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object crypto/CMakeFiles/CryptoFunc.dir/json_utils.cpp.o"
-	cd /home/guotiezheng/avalon/outTEE_workload.b/build/crypto && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/CryptoFunc.dir/json_utils.cpp.o -c /home/guotiezheng/avalon/outTEE_workload.b/crypto/json_utils.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guotiezheng/avalon/outTEE_workload/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object crypto/CMakeFiles/CryptoFunc.dir/json_utils.cpp.o"
+	cd /home/guotiezheng/avalon/outTEE_workload/build/crypto && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/CryptoFunc.dir/json_utils.cpp.o -c /home/guotiezheng/avalon/outTEE_workload/crypto/json_utils.cpp
 
 crypto/CMakeFiles/CryptoFunc.dir/json_utils.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CryptoFunc.dir/json_utils.cpp.i"
-	cd /home/guotiezheng/avalon/outTEE_workload.b/build/crypto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/guotiezheng/avalon/outTEE_workload.b/crypto/json_utils.cpp > CMakeFiles/CryptoFunc.dir/json_utils.cpp.i
+	cd /home/guotiezheng/avalon/outTEE_workload/build/crypto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/guotiezheng/avalon/outTEE_workload/crypto/json_utils.cpp > CMakeFiles/CryptoFunc.dir/json_utils.cpp.i
 
 crypto/CMakeFiles/CryptoFunc.dir/json_utils.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CryptoFunc.dir/json_utils.cpp.s"
-	cd /home/guotiezheng/avalon/outTEE_workload.b/build/crypto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/guotiezheng/avalon/outTEE_workload.b/crypto/json_utils.cpp -o CMakeFiles/CryptoFunc.dir/json_utils.cpp.s
+	cd /home/guotiezheng/avalon/outTEE_workload/build/crypto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/guotiezheng/avalon/outTEE_workload/crypto/json_utils.cpp -o CMakeFiles/CryptoFunc.dir/json_utils.cpp.s
 
 crypto/CMakeFiles/CryptoFunc.dir/json_utils.cpp.o.requires:
 
@@ -227,16 +227,16 @@ crypto/CMakeFiles/CryptoFunc.dir/json_utils.cpp.o.provides.build: crypto/CMakeFi
 
 crypto/CMakeFiles/CryptoFunc.dir/parson.cpp.o: crypto/CMakeFiles/CryptoFunc.dir/flags.make
 crypto/CMakeFiles/CryptoFunc.dir/parson.cpp.o: ../crypto/parson.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guotiezheng/avalon/outTEE_workload.b/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object crypto/CMakeFiles/CryptoFunc.dir/parson.cpp.o"
-	cd /home/guotiezheng/avalon/outTEE_workload.b/build/crypto && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/CryptoFunc.dir/parson.cpp.o -c /home/guotiezheng/avalon/outTEE_workload.b/crypto/parson.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guotiezheng/avalon/outTEE_workload/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object crypto/CMakeFiles/CryptoFunc.dir/parson.cpp.o"
+	cd /home/guotiezheng/avalon/outTEE_workload/build/crypto && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/CryptoFunc.dir/parson.cpp.o -c /home/guotiezheng/avalon/outTEE_workload/crypto/parson.cpp
 
 crypto/CMakeFiles/CryptoFunc.dir/parson.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CryptoFunc.dir/parson.cpp.i"
-	cd /home/guotiezheng/avalon/outTEE_workload.b/build/crypto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/guotiezheng/avalon/outTEE_workload.b/crypto/parson.cpp > CMakeFiles/CryptoFunc.dir/parson.cpp.i
+	cd /home/guotiezheng/avalon/outTEE_workload/build/crypto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/guotiezheng/avalon/outTEE_workload/crypto/parson.cpp > CMakeFiles/CryptoFunc.dir/parson.cpp.i
 
 crypto/CMakeFiles/CryptoFunc.dir/parson.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CryptoFunc.dir/parson.cpp.s"
-	cd /home/guotiezheng/avalon/outTEE_workload.b/build/crypto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/guotiezheng/avalon/outTEE_workload.b/crypto/parson.cpp -o CMakeFiles/CryptoFunc.dir/parson.cpp.s
+	cd /home/guotiezheng/avalon/outTEE_workload/build/crypto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/guotiezheng/avalon/outTEE_workload/crypto/parson.cpp -o CMakeFiles/CryptoFunc.dir/parson.cpp.s
 
 crypto/CMakeFiles/CryptoFunc.dir/parson.cpp.o.requires:
 
@@ -251,16 +251,16 @@ crypto/CMakeFiles/CryptoFunc.dir/parson.cpp.o.provides.build: crypto/CMakeFiles/
 
 crypto/CMakeFiles/CryptoFunc.dir/pkenc_private_key.cpp.o: crypto/CMakeFiles/CryptoFunc.dir/flags.make
 crypto/CMakeFiles/CryptoFunc.dir/pkenc_private_key.cpp.o: ../crypto/pkenc_private_key.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guotiezheng/avalon/outTEE_workload.b/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object crypto/CMakeFiles/CryptoFunc.dir/pkenc_private_key.cpp.o"
-	cd /home/guotiezheng/avalon/outTEE_workload.b/build/crypto && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/CryptoFunc.dir/pkenc_private_key.cpp.o -c /home/guotiezheng/avalon/outTEE_workload.b/crypto/pkenc_private_key.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guotiezheng/avalon/outTEE_workload/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object crypto/CMakeFiles/CryptoFunc.dir/pkenc_private_key.cpp.o"
+	cd /home/guotiezheng/avalon/outTEE_workload/build/crypto && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/CryptoFunc.dir/pkenc_private_key.cpp.o -c /home/guotiezheng/avalon/outTEE_workload/crypto/pkenc_private_key.cpp
 
 crypto/CMakeFiles/CryptoFunc.dir/pkenc_private_key.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CryptoFunc.dir/pkenc_private_key.cpp.i"
-	cd /home/guotiezheng/avalon/outTEE_workload.b/build/crypto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/guotiezheng/avalon/outTEE_workload.b/crypto/pkenc_private_key.cpp > CMakeFiles/CryptoFunc.dir/pkenc_private_key.cpp.i
+	cd /home/guotiezheng/avalon/outTEE_workload/build/crypto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/guotiezheng/avalon/outTEE_workload/crypto/pkenc_private_key.cpp > CMakeFiles/CryptoFunc.dir/pkenc_private_key.cpp.i
 
 crypto/CMakeFiles/CryptoFunc.dir/pkenc_private_key.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CryptoFunc.dir/pkenc_private_key.cpp.s"
-	cd /home/guotiezheng/avalon/outTEE_workload.b/build/crypto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/guotiezheng/avalon/outTEE_workload.b/crypto/pkenc_private_key.cpp -o CMakeFiles/CryptoFunc.dir/pkenc_private_key.cpp.s
+	cd /home/guotiezheng/avalon/outTEE_workload/build/crypto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/guotiezheng/avalon/outTEE_workload/crypto/pkenc_private_key.cpp -o CMakeFiles/CryptoFunc.dir/pkenc_private_key.cpp.s
 
 crypto/CMakeFiles/CryptoFunc.dir/pkenc_private_key.cpp.o.requires:
 
@@ -275,16 +275,16 @@ crypto/CMakeFiles/CryptoFunc.dir/pkenc_private_key.cpp.o.provides.build: crypto/
 
 crypto/CMakeFiles/CryptoFunc.dir/pkenc_private_key_common.cpp.o: crypto/CMakeFiles/CryptoFunc.dir/flags.make
 crypto/CMakeFiles/CryptoFunc.dir/pkenc_private_key_common.cpp.o: ../crypto/pkenc_private_key_common.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guotiezheng/avalon/outTEE_workload.b/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object crypto/CMakeFiles/CryptoFunc.dir/pkenc_private_key_common.cpp.o"
-	cd /home/guotiezheng/avalon/outTEE_workload.b/build/crypto && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/CryptoFunc.dir/pkenc_private_key_common.cpp.o -c /home/guotiezheng/avalon/outTEE_workload.b/crypto/pkenc_private_key_common.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guotiezheng/avalon/outTEE_workload/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object crypto/CMakeFiles/CryptoFunc.dir/pkenc_private_key_common.cpp.o"
+	cd /home/guotiezheng/avalon/outTEE_workload/build/crypto && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/CryptoFunc.dir/pkenc_private_key_common.cpp.o -c /home/guotiezheng/avalon/outTEE_workload/crypto/pkenc_private_key_common.cpp
 
 crypto/CMakeFiles/CryptoFunc.dir/pkenc_private_key_common.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CryptoFunc.dir/pkenc_private_key_common.cpp.i"
-	cd /home/guotiezheng/avalon/outTEE_workload.b/build/crypto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/guotiezheng/avalon/outTEE_workload.b/crypto/pkenc_private_key_common.cpp > CMakeFiles/CryptoFunc.dir/pkenc_private_key_common.cpp.i
+	cd /home/guotiezheng/avalon/outTEE_workload/build/crypto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/guotiezheng/avalon/outTEE_workload/crypto/pkenc_private_key_common.cpp > CMakeFiles/CryptoFunc.dir/pkenc_private_key_common.cpp.i
 
 crypto/CMakeFiles/CryptoFunc.dir/pkenc_private_key_common.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CryptoFunc.dir/pkenc_private_key_common.cpp.s"
-	cd /home/guotiezheng/avalon/outTEE_workload.b/build/crypto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/guotiezheng/avalon/outTEE_workload.b/crypto/pkenc_private_key_common.cpp -o CMakeFiles/CryptoFunc.dir/pkenc_private_key_common.cpp.s
+	cd /home/guotiezheng/avalon/outTEE_workload/build/crypto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/guotiezheng/avalon/outTEE_workload/crypto/pkenc_private_key_common.cpp -o CMakeFiles/CryptoFunc.dir/pkenc_private_key_common.cpp.s
 
 crypto/CMakeFiles/CryptoFunc.dir/pkenc_private_key_common.cpp.o.requires:
 
@@ -299,16 +299,16 @@ crypto/CMakeFiles/CryptoFunc.dir/pkenc_private_key_common.cpp.o.provides.build: 
 
 crypto/CMakeFiles/CryptoFunc.dir/pkenc_public_key.cpp.o: crypto/CMakeFiles/CryptoFunc.dir/flags.make
 crypto/CMakeFiles/CryptoFunc.dir/pkenc_public_key.cpp.o: ../crypto/pkenc_public_key.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guotiezheng/avalon/outTEE_workload.b/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object crypto/CMakeFiles/CryptoFunc.dir/pkenc_public_key.cpp.o"
-	cd /home/guotiezheng/avalon/outTEE_workload.b/build/crypto && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/CryptoFunc.dir/pkenc_public_key.cpp.o -c /home/guotiezheng/avalon/outTEE_workload.b/crypto/pkenc_public_key.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guotiezheng/avalon/outTEE_workload/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object crypto/CMakeFiles/CryptoFunc.dir/pkenc_public_key.cpp.o"
+	cd /home/guotiezheng/avalon/outTEE_workload/build/crypto && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/CryptoFunc.dir/pkenc_public_key.cpp.o -c /home/guotiezheng/avalon/outTEE_workload/crypto/pkenc_public_key.cpp
 
 crypto/CMakeFiles/CryptoFunc.dir/pkenc_public_key.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CryptoFunc.dir/pkenc_public_key.cpp.i"
-	cd /home/guotiezheng/avalon/outTEE_workload.b/build/crypto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/guotiezheng/avalon/outTEE_workload.b/crypto/pkenc_public_key.cpp > CMakeFiles/CryptoFunc.dir/pkenc_public_key.cpp.i
+	cd /home/guotiezheng/avalon/outTEE_workload/build/crypto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/guotiezheng/avalon/outTEE_workload/crypto/pkenc_public_key.cpp > CMakeFiles/CryptoFunc.dir/pkenc_public_key.cpp.i
 
 crypto/CMakeFiles/CryptoFunc.dir/pkenc_public_key.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CryptoFunc.dir/pkenc_public_key.cpp.s"
-	cd /home/guotiezheng/avalon/outTEE_workload.b/build/crypto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/guotiezheng/avalon/outTEE_workload.b/crypto/pkenc_public_key.cpp -o CMakeFiles/CryptoFunc.dir/pkenc_public_key.cpp.s
+	cd /home/guotiezheng/avalon/outTEE_workload/build/crypto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/guotiezheng/avalon/outTEE_workload/crypto/pkenc_public_key.cpp -o CMakeFiles/CryptoFunc.dir/pkenc_public_key.cpp.s
 
 crypto/CMakeFiles/CryptoFunc.dir/pkenc_public_key.cpp.o.requires:
 
@@ -323,16 +323,16 @@ crypto/CMakeFiles/CryptoFunc.dir/pkenc_public_key.cpp.o.provides.build: crypto/C
 
 crypto/CMakeFiles/CryptoFunc.dir/pkenc_public_key_common.cpp.o: crypto/CMakeFiles/CryptoFunc.dir/flags.make
 crypto/CMakeFiles/CryptoFunc.dir/pkenc_public_key_common.cpp.o: ../crypto/pkenc_public_key_common.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guotiezheng/avalon/outTEE_workload.b/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object crypto/CMakeFiles/CryptoFunc.dir/pkenc_public_key_common.cpp.o"
-	cd /home/guotiezheng/avalon/outTEE_workload.b/build/crypto && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/CryptoFunc.dir/pkenc_public_key_common.cpp.o -c /home/guotiezheng/avalon/outTEE_workload.b/crypto/pkenc_public_key_common.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guotiezheng/avalon/outTEE_workload/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object crypto/CMakeFiles/CryptoFunc.dir/pkenc_public_key_common.cpp.o"
+	cd /home/guotiezheng/avalon/outTEE_workload/build/crypto && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/CryptoFunc.dir/pkenc_public_key_common.cpp.o -c /home/guotiezheng/avalon/outTEE_workload/crypto/pkenc_public_key_common.cpp
 
 crypto/CMakeFiles/CryptoFunc.dir/pkenc_public_key_common.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CryptoFunc.dir/pkenc_public_key_common.cpp.i"
-	cd /home/guotiezheng/avalon/outTEE_workload.b/build/crypto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/guotiezheng/avalon/outTEE_workload.b/crypto/pkenc_public_key_common.cpp > CMakeFiles/CryptoFunc.dir/pkenc_public_key_common.cpp.i
+	cd /home/guotiezheng/avalon/outTEE_workload/build/crypto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/guotiezheng/avalon/outTEE_workload/crypto/pkenc_public_key_common.cpp > CMakeFiles/CryptoFunc.dir/pkenc_public_key_common.cpp.i
 
 crypto/CMakeFiles/CryptoFunc.dir/pkenc_public_key_common.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CryptoFunc.dir/pkenc_public_key_common.cpp.s"
-	cd /home/guotiezheng/avalon/outTEE_workload.b/build/crypto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/guotiezheng/avalon/outTEE_workload.b/crypto/pkenc_public_key_common.cpp -o CMakeFiles/CryptoFunc.dir/pkenc_public_key_common.cpp.s
+	cd /home/guotiezheng/avalon/outTEE_workload/build/crypto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/guotiezheng/avalon/outTEE_workload/crypto/pkenc_public_key_common.cpp -o CMakeFiles/CryptoFunc.dir/pkenc_public_key_common.cpp.s
 
 crypto/CMakeFiles/CryptoFunc.dir/pkenc_public_key_common.cpp.o.requires:
 
@@ -347,16 +347,16 @@ crypto/CMakeFiles/CryptoFunc.dir/pkenc_public_key_common.cpp.o.provides.build: c
 
 crypto/CMakeFiles/CryptoFunc.dir/sig_private_key.cpp.o: crypto/CMakeFiles/CryptoFunc.dir/flags.make
 crypto/CMakeFiles/CryptoFunc.dir/sig_private_key.cpp.o: ../crypto/sig_private_key.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guotiezheng/avalon/outTEE_workload.b/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object crypto/CMakeFiles/CryptoFunc.dir/sig_private_key.cpp.o"
-	cd /home/guotiezheng/avalon/outTEE_workload.b/build/crypto && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/CryptoFunc.dir/sig_private_key.cpp.o -c /home/guotiezheng/avalon/outTEE_workload.b/crypto/sig_private_key.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guotiezheng/avalon/outTEE_workload/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object crypto/CMakeFiles/CryptoFunc.dir/sig_private_key.cpp.o"
+	cd /home/guotiezheng/avalon/outTEE_workload/build/crypto && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/CryptoFunc.dir/sig_private_key.cpp.o -c /home/guotiezheng/avalon/outTEE_workload/crypto/sig_private_key.cpp
 
 crypto/CMakeFiles/CryptoFunc.dir/sig_private_key.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CryptoFunc.dir/sig_private_key.cpp.i"
-	cd /home/guotiezheng/avalon/outTEE_workload.b/build/crypto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/guotiezheng/avalon/outTEE_workload.b/crypto/sig_private_key.cpp > CMakeFiles/CryptoFunc.dir/sig_private_key.cpp.i
+	cd /home/guotiezheng/avalon/outTEE_workload/build/crypto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/guotiezheng/avalon/outTEE_workload/crypto/sig_private_key.cpp > CMakeFiles/CryptoFunc.dir/sig_private_key.cpp.i
 
 crypto/CMakeFiles/CryptoFunc.dir/sig_private_key.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CryptoFunc.dir/sig_private_key.cpp.s"
-	cd /home/guotiezheng/avalon/outTEE_workload.b/build/crypto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/guotiezheng/avalon/outTEE_workload.b/crypto/sig_private_key.cpp -o CMakeFiles/CryptoFunc.dir/sig_private_key.cpp.s
+	cd /home/guotiezheng/avalon/outTEE_workload/build/crypto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/guotiezheng/avalon/outTEE_workload/crypto/sig_private_key.cpp -o CMakeFiles/CryptoFunc.dir/sig_private_key.cpp.s
 
 crypto/CMakeFiles/CryptoFunc.dir/sig_private_key.cpp.o.requires:
 
@@ -371,16 +371,16 @@ crypto/CMakeFiles/CryptoFunc.dir/sig_private_key.cpp.o.provides.build: crypto/CM
 
 crypto/CMakeFiles/CryptoFunc.dir/sig_private_key_common.cpp.o: crypto/CMakeFiles/CryptoFunc.dir/flags.make
 crypto/CMakeFiles/CryptoFunc.dir/sig_private_key_common.cpp.o: ../crypto/sig_private_key_common.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guotiezheng/avalon/outTEE_workload.b/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object crypto/CMakeFiles/CryptoFunc.dir/sig_private_key_common.cpp.o"
-	cd /home/guotiezheng/avalon/outTEE_workload.b/build/crypto && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/CryptoFunc.dir/sig_private_key_common.cpp.o -c /home/guotiezheng/avalon/outTEE_workload.b/crypto/sig_private_key_common.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guotiezheng/avalon/outTEE_workload/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object crypto/CMakeFiles/CryptoFunc.dir/sig_private_key_common.cpp.o"
+	cd /home/guotiezheng/avalon/outTEE_workload/build/crypto && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/CryptoFunc.dir/sig_private_key_common.cpp.o -c /home/guotiezheng/avalon/outTEE_workload/crypto/sig_private_key_common.cpp
 
 crypto/CMakeFiles/CryptoFunc.dir/sig_private_key_common.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CryptoFunc.dir/sig_private_key_common.cpp.i"
-	cd /home/guotiezheng/avalon/outTEE_workload.b/build/crypto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/guotiezheng/avalon/outTEE_workload.b/crypto/sig_private_key_common.cpp > CMakeFiles/CryptoFunc.dir/sig_private_key_common.cpp.i
+	cd /home/guotiezheng/avalon/outTEE_workload/build/crypto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/guotiezheng/avalon/outTEE_workload/crypto/sig_private_key_common.cpp > CMakeFiles/CryptoFunc.dir/sig_private_key_common.cpp.i
 
 crypto/CMakeFiles/CryptoFunc.dir/sig_private_key_common.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CryptoFunc.dir/sig_private_key_common.cpp.s"
-	cd /home/guotiezheng/avalon/outTEE_workload.b/build/crypto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/guotiezheng/avalon/outTEE_workload.b/crypto/sig_private_key_common.cpp -o CMakeFiles/CryptoFunc.dir/sig_private_key_common.cpp.s
+	cd /home/guotiezheng/avalon/outTEE_workload/build/crypto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/guotiezheng/avalon/outTEE_workload/crypto/sig_private_key_common.cpp -o CMakeFiles/CryptoFunc.dir/sig_private_key_common.cpp.s
 
 crypto/CMakeFiles/CryptoFunc.dir/sig_private_key_common.cpp.o.requires:
 
@@ -395,16 +395,16 @@ crypto/CMakeFiles/CryptoFunc.dir/sig_private_key_common.cpp.o.provides.build: cr
 
 crypto/CMakeFiles/CryptoFunc.dir/sig_public_key.cpp.o: crypto/CMakeFiles/CryptoFunc.dir/flags.make
 crypto/CMakeFiles/CryptoFunc.dir/sig_public_key.cpp.o: ../crypto/sig_public_key.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guotiezheng/avalon/outTEE_workload.b/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object crypto/CMakeFiles/CryptoFunc.dir/sig_public_key.cpp.o"
-	cd /home/guotiezheng/avalon/outTEE_workload.b/build/crypto && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/CryptoFunc.dir/sig_public_key.cpp.o -c /home/guotiezheng/avalon/outTEE_workload.b/crypto/sig_public_key.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guotiezheng/avalon/outTEE_workload/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object crypto/CMakeFiles/CryptoFunc.dir/sig_public_key.cpp.o"
+	cd /home/guotiezheng/avalon/outTEE_workload/build/crypto && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/CryptoFunc.dir/sig_public_key.cpp.o -c /home/guotiezheng/avalon/outTEE_workload/crypto/sig_public_key.cpp
 
 crypto/CMakeFiles/CryptoFunc.dir/sig_public_key.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CryptoFunc.dir/sig_public_key.cpp.i"
-	cd /home/guotiezheng/avalon/outTEE_workload.b/build/crypto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/guotiezheng/avalon/outTEE_workload.b/crypto/sig_public_key.cpp > CMakeFiles/CryptoFunc.dir/sig_public_key.cpp.i
+	cd /home/guotiezheng/avalon/outTEE_workload/build/crypto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/guotiezheng/avalon/outTEE_workload/crypto/sig_public_key.cpp > CMakeFiles/CryptoFunc.dir/sig_public_key.cpp.i
 
 crypto/CMakeFiles/CryptoFunc.dir/sig_public_key.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CryptoFunc.dir/sig_public_key.cpp.s"
-	cd /home/guotiezheng/avalon/outTEE_workload.b/build/crypto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/guotiezheng/avalon/outTEE_workload.b/crypto/sig_public_key.cpp -o CMakeFiles/CryptoFunc.dir/sig_public_key.cpp.s
+	cd /home/guotiezheng/avalon/outTEE_workload/build/crypto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/guotiezheng/avalon/outTEE_workload/crypto/sig_public_key.cpp -o CMakeFiles/CryptoFunc.dir/sig_public_key.cpp.s
 
 crypto/CMakeFiles/CryptoFunc.dir/sig_public_key.cpp.o.requires:
 
@@ -419,16 +419,16 @@ crypto/CMakeFiles/CryptoFunc.dir/sig_public_key.cpp.o.provides.build: crypto/CMa
 
 crypto/CMakeFiles/CryptoFunc.dir/sig_public_key_common.cpp.o: crypto/CMakeFiles/CryptoFunc.dir/flags.make
 crypto/CMakeFiles/CryptoFunc.dir/sig_public_key_common.cpp.o: ../crypto/sig_public_key_common.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guotiezheng/avalon/outTEE_workload.b/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object crypto/CMakeFiles/CryptoFunc.dir/sig_public_key_common.cpp.o"
-	cd /home/guotiezheng/avalon/outTEE_workload.b/build/crypto && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/CryptoFunc.dir/sig_public_key_common.cpp.o -c /home/guotiezheng/avalon/outTEE_workload.b/crypto/sig_public_key_common.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guotiezheng/avalon/outTEE_workload/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object crypto/CMakeFiles/CryptoFunc.dir/sig_public_key_common.cpp.o"
+	cd /home/guotiezheng/avalon/outTEE_workload/build/crypto && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/CryptoFunc.dir/sig_public_key_common.cpp.o -c /home/guotiezheng/avalon/outTEE_workload/crypto/sig_public_key_common.cpp
 
 crypto/CMakeFiles/CryptoFunc.dir/sig_public_key_common.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CryptoFunc.dir/sig_public_key_common.cpp.i"
-	cd /home/guotiezheng/avalon/outTEE_workload.b/build/crypto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/guotiezheng/avalon/outTEE_workload.b/crypto/sig_public_key_common.cpp > CMakeFiles/CryptoFunc.dir/sig_public_key_common.cpp.i
+	cd /home/guotiezheng/avalon/outTEE_workload/build/crypto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/guotiezheng/avalon/outTEE_workload/crypto/sig_public_key_common.cpp > CMakeFiles/CryptoFunc.dir/sig_public_key_common.cpp.i
 
 crypto/CMakeFiles/CryptoFunc.dir/sig_public_key_common.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CryptoFunc.dir/sig_public_key_common.cpp.s"
-	cd /home/guotiezheng/avalon/outTEE_workload.b/build/crypto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/guotiezheng/avalon/outTEE_workload.b/crypto/sig_public_key_common.cpp -o CMakeFiles/CryptoFunc.dir/sig_public_key_common.cpp.s
+	cd /home/guotiezheng/avalon/outTEE_workload/build/crypto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/guotiezheng/avalon/outTEE_workload/crypto/sig_public_key_common.cpp -o CMakeFiles/CryptoFunc.dir/sig_public_key_common.cpp.s
 
 crypto/CMakeFiles/CryptoFunc.dir/sig_public_key_common.cpp.o.requires:
 
@@ -443,16 +443,16 @@ crypto/CMakeFiles/CryptoFunc.dir/sig_public_key_common.cpp.o.provides.build: cry
 
 crypto/CMakeFiles/CryptoFunc.dir/skenc.cpp.o: crypto/CMakeFiles/CryptoFunc.dir/flags.make
 crypto/CMakeFiles/CryptoFunc.dir/skenc.cpp.o: ../crypto/skenc.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guotiezheng/avalon/outTEE_workload.b/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object crypto/CMakeFiles/CryptoFunc.dir/skenc.cpp.o"
-	cd /home/guotiezheng/avalon/outTEE_workload.b/build/crypto && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/CryptoFunc.dir/skenc.cpp.o -c /home/guotiezheng/avalon/outTEE_workload.b/crypto/skenc.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guotiezheng/avalon/outTEE_workload/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object crypto/CMakeFiles/CryptoFunc.dir/skenc.cpp.o"
+	cd /home/guotiezheng/avalon/outTEE_workload/build/crypto && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/CryptoFunc.dir/skenc.cpp.o -c /home/guotiezheng/avalon/outTEE_workload/crypto/skenc.cpp
 
 crypto/CMakeFiles/CryptoFunc.dir/skenc.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CryptoFunc.dir/skenc.cpp.i"
-	cd /home/guotiezheng/avalon/outTEE_workload.b/build/crypto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/guotiezheng/avalon/outTEE_workload.b/crypto/skenc.cpp > CMakeFiles/CryptoFunc.dir/skenc.cpp.i
+	cd /home/guotiezheng/avalon/outTEE_workload/build/crypto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/guotiezheng/avalon/outTEE_workload/crypto/skenc.cpp > CMakeFiles/CryptoFunc.dir/skenc.cpp.i
 
 crypto/CMakeFiles/CryptoFunc.dir/skenc.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CryptoFunc.dir/skenc.cpp.s"
-	cd /home/guotiezheng/avalon/outTEE_workload.b/build/crypto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/guotiezheng/avalon/outTEE_workload.b/crypto/skenc.cpp -o CMakeFiles/CryptoFunc.dir/skenc.cpp.s
+	cd /home/guotiezheng/avalon/outTEE_workload/build/crypto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/guotiezheng/avalon/outTEE_workload/crypto/skenc.cpp -o CMakeFiles/CryptoFunc.dir/skenc.cpp.s
 
 crypto/CMakeFiles/CryptoFunc.dir/skenc.cpp.o.requires:
 
@@ -467,16 +467,16 @@ crypto/CMakeFiles/CryptoFunc.dir/skenc.cpp.o.provides.build: crypto/CMakeFiles/C
 
 crypto/CMakeFiles/CryptoFunc.dir/skenc_common.cpp.o: crypto/CMakeFiles/CryptoFunc.dir/flags.make
 crypto/CMakeFiles/CryptoFunc.dir/skenc_common.cpp.o: ../crypto/skenc_common.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guotiezheng/avalon/outTEE_workload.b/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object crypto/CMakeFiles/CryptoFunc.dir/skenc_common.cpp.o"
-	cd /home/guotiezheng/avalon/outTEE_workload.b/build/crypto && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/CryptoFunc.dir/skenc_common.cpp.o -c /home/guotiezheng/avalon/outTEE_workload.b/crypto/skenc_common.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guotiezheng/avalon/outTEE_workload/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object crypto/CMakeFiles/CryptoFunc.dir/skenc_common.cpp.o"
+	cd /home/guotiezheng/avalon/outTEE_workload/build/crypto && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/CryptoFunc.dir/skenc_common.cpp.o -c /home/guotiezheng/avalon/outTEE_workload/crypto/skenc_common.cpp
 
 crypto/CMakeFiles/CryptoFunc.dir/skenc_common.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CryptoFunc.dir/skenc_common.cpp.i"
-	cd /home/guotiezheng/avalon/outTEE_workload.b/build/crypto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/guotiezheng/avalon/outTEE_workload.b/crypto/skenc_common.cpp > CMakeFiles/CryptoFunc.dir/skenc_common.cpp.i
+	cd /home/guotiezheng/avalon/outTEE_workload/build/crypto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/guotiezheng/avalon/outTEE_workload/crypto/skenc_common.cpp > CMakeFiles/CryptoFunc.dir/skenc_common.cpp.i
 
 crypto/CMakeFiles/CryptoFunc.dir/skenc_common.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CryptoFunc.dir/skenc_common.cpp.s"
-	cd /home/guotiezheng/avalon/outTEE_workload.b/build/crypto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/guotiezheng/avalon/outTEE_workload.b/crypto/skenc_common.cpp -o CMakeFiles/CryptoFunc.dir/skenc_common.cpp.s
+	cd /home/guotiezheng/avalon/outTEE_workload/build/crypto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/guotiezheng/avalon/outTEE_workload/crypto/skenc_common.cpp -o CMakeFiles/CryptoFunc.dir/skenc_common.cpp.s
 
 crypto/CMakeFiles/CryptoFunc.dir/skenc_common.cpp.o.requires:
 
@@ -491,16 +491,16 @@ crypto/CMakeFiles/CryptoFunc.dir/skenc_common.cpp.o.provides.build: crypto/CMake
 
 crypto/CMakeFiles/CryptoFunc.dir/types.cpp.o: crypto/CMakeFiles/CryptoFunc.dir/flags.make
 crypto/CMakeFiles/CryptoFunc.dir/types.cpp.o: ../crypto/types.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guotiezheng/avalon/outTEE_workload.b/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object crypto/CMakeFiles/CryptoFunc.dir/types.cpp.o"
-	cd /home/guotiezheng/avalon/outTEE_workload.b/build/crypto && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/CryptoFunc.dir/types.cpp.o -c /home/guotiezheng/avalon/outTEE_workload.b/crypto/types.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guotiezheng/avalon/outTEE_workload/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object crypto/CMakeFiles/CryptoFunc.dir/types.cpp.o"
+	cd /home/guotiezheng/avalon/outTEE_workload/build/crypto && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/CryptoFunc.dir/types.cpp.o -c /home/guotiezheng/avalon/outTEE_workload/crypto/types.cpp
 
 crypto/CMakeFiles/CryptoFunc.dir/types.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CryptoFunc.dir/types.cpp.i"
-	cd /home/guotiezheng/avalon/outTEE_workload.b/build/crypto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/guotiezheng/avalon/outTEE_workload.b/crypto/types.cpp > CMakeFiles/CryptoFunc.dir/types.cpp.i
+	cd /home/guotiezheng/avalon/outTEE_workload/build/crypto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/guotiezheng/avalon/outTEE_workload/crypto/types.cpp > CMakeFiles/CryptoFunc.dir/types.cpp.i
 
 crypto/CMakeFiles/CryptoFunc.dir/types.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CryptoFunc.dir/types.cpp.s"
-	cd /home/guotiezheng/avalon/outTEE_workload.b/build/crypto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/guotiezheng/avalon/outTEE_workload.b/crypto/types.cpp -o CMakeFiles/CryptoFunc.dir/types.cpp.s
+	cd /home/guotiezheng/avalon/outTEE_workload/build/crypto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/guotiezheng/avalon/outTEE_workload/crypto/types.cpp -o CMakeFiles/CryptoFunc.dir/types.cpp.s
 
 crypto/CMakeFiles/CryptoFunc.dir/types.cpp.o.requires:
 
@@ -515,16 +515,16 @@ crypto/CMakeFiles/CryptoFunc.dir/types.cpp.o.provides.build: crypto/CMakeFiles/C
 
 crypto/CMakeFiles/CryptoFunc.dir/utils.cpp.o: crypto/CMakeFiles/CryptoFunc.dir/flags.make
 crypto/CMakeFiles/CryptoFunc.dir/utils.cpp.o: ../crypto/utils.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guotiezheng/avalon/outTEE_workload.b/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object crypto/CMakeFiles/CryptoFunc.dir/utils.cpp.o"
-	cd /home/guotiezheng/avalon/outTEE_workload.b/build/crypto && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/CryptoFunc.dir/utils.cpp.o -c /home/guotiezheng/avalon/outTEE_workload.b/crypto/utils.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guotiezheng/avalon/outTEE_workload/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object crypto/CMakeFiles/CryptoFunc.dir/utils.cpp.o"
+	cd /home/guotiezheng/avalon/outTEE_workload/build/crypto && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/CryptoFunc.dir/utils.cpp.o -c /home/guotiezheng/avalon/outTEE_workload/crypto/utils.cpp
 
 crypto/CMakeFiles/CryptoFunc.dir/utils.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CryptoFunc.dir/utils.cpp.i"
-	cd /home/guotiezheng/avalon/outTEE_workload.b/build/crypto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/guotiezheng/avalon/outTEE_workload.b/crypto/utils.cpp > CMakeFiles/CryptoFunc.dir/utils.cpp.i
+	cd /home/guotiezheng/avalon/outTEE_workload/build/crypto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/guotiezheng/avalon/outTEE_workload/crypto/utils.cpp > CMakeFiles/CryptoFunc.dir/utils.cpp.i
 
 crypto/CMakeFiles/CryptoFunc.dir/utils.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CryptoFunc.dir/utils.cpp.s"
-	cd /home/guotiezheng/avalon/outTEE_workload.b/build/crypto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/guotiezheng/avalon/outTEE_workload.b/crypto/utils.cpp -o CMakeFiles/CryptoFunc.dir/utils.cpp.s
+	cd /home/guotiezheng/avalon/outTEE_workload/build/crypto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/guotiezheng/avalon/outTEE_workload/crypto/utils.cpp -o CMakeFiles/CryptoFunc.dir/utils.cpp.s
 
 crypto/CMakeFiles/CryptoFunc.dir/utils.cpp.o.requires:
 
@@ -539,16 +539,16 @@ crypto/CMakeFiles/CryptoFunc.dir/utils.cpp.o.provides.build: crypto/CMakeFiles/C
 
 crypto/CMakeFiles/CryptoFunc.dir/verify_certificate.cpp.o: crypto/CMakeFiles/CryptoFunc.dir/flags.make
 crypto/CMakeFiles/CryptoFunc.dir/verify_certificate.cpp.o: ../crypto/verify_certificate.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guotiezheng/avalon/outTEE_workload.b/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object crypto/CMakeFiles/CryptoFunc.dir/verify_certificate.cpp.o"
-	cd /home/guotiezheng/avalon/outTEE_workload.b/build/crypto && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/CryptoFunc.dir/verify_certificate.cpp.o -c /home/guotiezheng/avalon/outTEE_workload.b/crypto/verify_certificate.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guotiezheng/avalon/outTEE_workload/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object crypto/CMakeFiles/CryptoFunc.dir/verify_certificate.cpp.o"
+	cd /home/guotiezheng/avalon/outTEE_workload/build/crypto && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/CryptoFunc.dir/verify_certificate.cpp.o -c /home/guotiezheng/avalon/outTEE_workload/crypto/verify_certificate.cpp
 
 crypto/CMakeFiles/CryptoFunc.dir/verify_certificate.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CryptoFunc.dir/verify_certificate.cpp.i"
-	cd /home/guotiezheng/avalon/outTEE_workload.b/build/crypto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/guotiezheng/avalon/outTEE_workload.b/crypto/verify_certificate.cpp > CMakeFiles/CryptoFunc.dir/verify_certificate.cpp.i
+	cd /home/guotiezheng/avalon/outTEE_workload/build/crypto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/guotiezheng/avalon/outTEE_workload/crypto/verify_certificate.cpp > CMakeFiles/CryptoFunc.dir/verify_certificate.cpp.i
 
 crypto/CMakeFiles/CryptoFunc.dir/verify_certificate.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CryptoFunc.dir/verify_certificate.cpp.s"
-	cd /home/guotiezheng/avalon/outTEE_workload.b/build/crypto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/guotiezheng/avalon/outTEE_workload.b/crypto/verify_certificate.cpp -o CMakeFiles/CryptoFunc.dir/verify_certificate.cpp.s
+	cd /home/guotiezheng/avalon/outTEE_workload/build/crypto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/guotiezheng/avalon/outTEE_workload/crypto/verify_certificate.cpp -o CMakeFiles/CryptoFunc.dir/verify_certificate.cpp.s
 
 crypto/CMakeFiles/CryptoFunc.dir/verify_certificate.cpp.o.requires:
 
@@ -563,16 +563,16 @@ crypto/CMakeFiles/CryptoFunc.dir/verify_certificate.cpp.o.provides.build: crypto
 
 crypto/CMakeFiles/CryptoFunc.dir/verify_signature.cpp.o: crypto/CMakeFiles/CryptoFunc.dir/flags.make
 crypto/CMakeFiles/CryptoFunc.dir/verify_signature.cpp.o: ../crypto/verify_signature.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guotiezheng/avalon/outTEE_workload.b/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object crypto/CMakeFiles/CryptoFunc.dir/verify_signature.cpp.o"
-	cd /home/guotiezheng/avalon/outTEE_workload.b/build/crypto && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/CryptoFunc.dir/verify_signature.cpp.o -c /home/guotiezheng/avalon/outTEE_workload.b/crypto/verify_signature.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guotiezheng/avalon/outTEE_workload/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object crypto/CMakeFiles/CryptoFunc.dir/verify_signature.cpp.o"
+	cd /home/guotiezheng/avalon/outTEE_workload/build/crypto && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/CryptoFunc.dir/verify_signature.cpp.o -c /home/guotiezheng/avalon/outTEE_workload/crypto/verify_signature.cpp
 
 crypto/CMakeFiles/CryptoFunc.dir/verify_signature.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CryptoFunc.dir/verify_signature.cpp.i"
-	cd /home/guotiezheng/avalon/outTEE_workload.b/build/crypto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/guotiezheng/avalon/outTEE_workload.b/crypto/verify_signature.cpp > CMakeFiles/CryptoFunc.dir/verify_signature.cpp.i
+	cd /home/guotiezheng/avalon/outTEE_workload/build/crypto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/guotiezheng/avalon/outTEE_workload/crypto/verify_signature.cpp > CMakeFiles/CryptoFunc.dir/verify_signature.cpp.i
 
 crypto/CMakeFiles/CryptoFunc.dir/verify_signature.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CryptoFunc.dir/verify_signature.cpp.s"
-	cd /home/guotiezheng/avalon/outTEE_workload.b/build/crypto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/guotiezheng/avalon/outTEE_workload.b/crypto/verify_signature.cpp -o CMakeFiles/CryptoFunc.dir/verify_signature.cpp.s
+	cd /home/guotiezheng/avalon/outTEE_workload/build/crypto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/guotiezheng/avalon/outTEE_workload/crypto/verify_signature.cpp -o CMakeFiles/CryptoFunc.dir/verify_signature.cpp.s
 
 crypto/CMakeFiles/CryptoFunc.dir/verify_signature.cpp.o.requires:
 
@@ -637,9 +637,9 @@ crypto/libCryptoFunc.a: crypto/CMakeFiles/CryptoFunc.dir/verify_certificate.cpp.
 crypto/libCryptoFunc.a: crypto/CMakeFiles/CryptoFunc.dir/verify_signature.cpp.o
 crypto/libCryptoFunc.a: crypto/CMakeFiles/CryptoFunc.dir/build.make
 crypto/libCryptoFunc.a: crypto/CMakeFiles/CryptoFunc.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/guotiezheng/avalon/outTEE_workload.b/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Linking CXX static library libCryptoFunc.a"
-	cd /home/guotiezheng/avalon/outTEE_workload.b/build/crypto && $(CMAKE_COMMAND) -P CMakeFiles/CryptoFunc.dir/cmake_clean_target.cmake
-	cd /home/guotiezheng/avalon/outTEE_workload.b/build/crypto && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/CryptoFunc.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/guotiezheng/avalon/outTEE_workload/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Linking CXX static library libCryptoFunc.a"
+	cd /home/guotiezheng/avalon/outTEE_workload/build/crypto && $(CMAKE_COMMAND) -P CMakeFiles/CryptoFunc.dir/cmake_clean_target.cmake
+	cd /home/guotiezheng/avalon/outTEE_workload/build/crypto && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/CryptoFunc.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 crypto/CMakeFiles/CryptoFunc.dir/build: crypto/libCryptoFunc.a
@@ -672,10 +672,10 @@ crypto/CMakeFiles/CryptoFunc.dir/requires: crypto/CMakeFiles/CryptoFunc.dir/veri
 .PHONY : crypto/CMakeFiles/CryptoFunc.dir/requires
 
 crypto/CMakeFiles/CryptoFunc.dir/clean:
-	cd /home/guotiezheng/avalon/outTEE_workload.b/build/crypto && $(CMAKE_COMMAND) -P CMakeFiles/CryptoFunc.dir/cmake_clean.cmake
+	cd /home/guotiezheng/avalon/outTEE_workload/build/crypto && $(CMAKE_COMMAND) -P CMakeFiles/CryptoFunc.dir/cmake_clean.cmake
 .PHONY : crypto/CMakeFiles/CryptoFunc.dir/clean
 
 crypto/CMakeFiles/CryptoFunc.dir/depend:
-	cd /home/guotiezheng/avalon/outTEE_workload.b/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/guotiezheng/avalon/outTEE_workload.b /home/guotiezheng/avalon/outTEE_workload.b/crypto /home/guotiezheng/avalon/outTEE_workload.b/build /home/guotiezheng/avalon/outTEE_workload.b/build/crypto /home/guotiezheng/avalon/outTEE_workload.b/build/crypto/CMakeFiles/CryptoFunc.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/guotiezheng/avalon/outTEE_workload/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/guotiezheng/avalon/outTEE_workload /home/guotiezheng/avalon/outTEE_workload/crypto /home/guotiezheng/avalon/outTEE_workload/build /home/guotiezheng/avalon/outTEE_workload/build/crypto /home/guotiezheng/avalon/outTEE_workload/build/crypto/CMakeFiles/CryptoFunc.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : crypto/CMakeFiles/CryptoFunc.dir/depend
 

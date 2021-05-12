@@ -10,7 +10,7 @@
 string
 -
 
-/home/guotiezheng/avalon/outTEE_workload.b/test.cpp
+/home/guotiezheng/avalon/outTEE_workload/test.cpp
 string
 -
 fstream
@@ -20,5 +20,5 @@ iostream
 stdio.h
 -
 crypto_helper.h
-/home/guotiezheng/avalon/outTEE_workload.b/crypto_helper.h
+/home/guotiezheng/avalon/outTEE_workload/crypto_helper.h
 

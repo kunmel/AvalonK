@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/guotiezheng/avalon/outTEE_workload.b
+CMAKE_SOURCE_DIR = /home/guotiezheng/avalon/outTEE_workload
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/guotiezheng/avalon/outTEE_workload.b/build
+CMAKE_BINARY_DIR = /home/guotiezheng/avalon/outTEE_workload/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,14 +80,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/guotiezheng/avalon/outTEE_workload.b/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/guotiezheng/avalon/outTEE_workload.b/build/CMakeFiles /home/guotiezheng/avalon/outTEE_workload.b/build/crypto/CMakeFiles/progress.marks
-	cd /home/guotiezheng/avalon/outTEE_workload.b/build && $(MAKE) -f CMakeFiles/Makefile2 crypto/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/guotiezheng/avalon/outTEE_workload.b/build/CMakeFiles 0
+	cd /home/guotiezheng/avalon/outTEE_workload/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/guotiezheng/avalon/outTEE_workload/build/CMakeFiles /home/guotiezheng/avalon/outTEE_workload/build/crypto/CMakeFiles/progress.marks
+	cd /home/guotiezheng/avalon/outTEE_workload/build && $(MAKE) -f CMakeFiles/Makefile2 crypto/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/guotiezheng/avalon/outTEE_workload/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/guotiezheng/avalon/outTEE_workload.b/build && $(MAKE) -f CMakeFiles/Makefile2 crypto/clean
+	cd /home/guotiezheng/avalon/outTEE_workload/build && $(MAKE) -f CMakeFiles/Makefile2 crypto/clean
 .PHONY : clean
 
 # The main clean target
@@ -97,22 +97,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/guotiezheng/avalon/outTEE_workload.b/build && $(MAKE) -f CMakeFiles/Makefile2 crypto/preinstall
+	cd /home/guotiezheng/avalon/outTEE_workload/build && $(MAKE) -f CMakeFiles/Makefile2 crypto/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/guotiezheng/avalon/outTEE_workload.b/build && $(MAKE) -f CMakeFiles/Makefile2 crypto/preinstall
+	cd /home/guotiezheng/avalon/outTEE_workload/build && $(MAKE) -f CMakeFiles/Makefile2 crypto/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/guotiezheng/avalon/outTEE_workload.b/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/guotiezheng/avalon/outTEE_workload/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 crypto/CMakeFiles/CryptoFunc.dir/rule:
-	cd /home/guotiezheng/avalon/outTEE_workload.b/build && $(MAKE) -f CMakeFiles/Makefile2 crypto/CMakeFiles/CryptoFunc.dir/rule
+	cd /home/guotiezheng/avalon/outTEE_workload/build && $(MAKE) -f CMakeFiles/Makefile2 crypto/CMakeFiles/CryptoFunc.dir/rule
 .PHONY : crypto/CMakeFiles/CryptoFunc.dir/rule
 
 # Convenience name for target.
@@ -122,7 +122,7 @@ CryptoFunc: crypto/CMakeFiles/CryptoFunc.dir/rule
 
 # fast build rule for target.
 CryptoFunc/fast:
-	cd /home/guotiezheng/avalon/outTEE_workload.b/build && $(MAKE) -f crypto/CMakeFiles/CryptoFunc.dir/build.make crypto/CMakeFiles/CryptoFunc.dir/build
+	cd /home/guotiezheng/avalon/outTEE_workload/build && $(MAKE) -f crypto/CMakeFiles/CryptoFunc.dir/build.make crypto/CMakeFiles/CryptoFunc.dir/build
 .PHONY : CryptoFunc/fast
 
 base64.o: base64.cpp.o
@@ -131,7 +131,7 @@ base64.o: base64.cpp.o
 
 # target to build an object file
 base64.cpp.o:
-	cd /home/guotiezheng/avalon/outTEE_workload.b/build && $(MAKE) -f crypto/CMakeFiles/CryptoFunc.dir/build.make crypto/CMakeFiles/CryptoFunc.dir/base64.cpp.o
+	cd /home/guotiezheng/avalon/outTEE_workload/build && $(MAKE) -f crypto/CMakeFiles/CryptoFunc.dir/build.make crypto/CMakeFiles/CryptoFunc.dir/base64.cpp.o
 .PHONY : base64.cpp.o
 
 base64.i: base64.cpp.i
@@ -140,7 +140,7 @@ base64.i: base64.cpp.i
 
 # target to preprocess a source file
 base64.cpp.i:
-	cd /home/guotiezheng/avalon/outTEE_workload.b/build && $(MAKE) -f crypto/CMakeFiles/CryptoFunc.dir/build.make crypto/CMakeFiles/CryptoFunc.dir/base64.cpp.i
+	cd /home/guotiezheng/avalon/outTEE_workload/build && $(MAKE) -f crypto/CMakeFiles/CryptoFunc.dir/build.make crypto/CMakeFiles/CryptoFunc.dir/base64.cpp.i
 .PHONY : base64.cpp.i
 
 base64.s: base64.cpp.s
@@ -149,7 +149,7 @@ base64.s: base64.cpp.s
 
 # target to generate assembly for a file
 base64.cpp.s:
-	cd /home/guotiezheng/avalon/outTEE_workload.b/build && $(MAKE) -f crypto/CMakeFiles/CryptoFunc.dir/build.make crypto/CMakeFiles/CryptoFunc.dir/base64.cpp.s
+	cd /home/guotiezheng/avalon/outTEE_workload/build && $(MAKE) -f crypto/CMakeFiles/CryptoFunc.dir/build.make crypto/CMakeFiles/CryptoFunc.dir/base64.cpp.s
 .PHONY : base64.cpp.s
 
 c11_support.o: c11_support.cpp.o
@@ -158,7 +158,7 @@ c11_support.o: c11_support.cpp.o
 
 # target to build an object file
 c11_support.cpp.o:
-	cd /home/guotiezheng/avalon/outTEE_workload.b/build && $(MAKE) -f crypto/CMakeFiles/CryptoFunc.dir/build.make crypto/CMakeFiles/CryptoFunc.dir/c11_support.cpp.o
+	cd /home/guotiezheng/avalon/outTEE_workload/build && $(MAKE) -f crypto/CMakeFiles/CryptoFunc.dir/build.make crypto/CMakeFiles/CryptoFunc.dir/c11_support.cpp.o
 .PHONY : c11_support.cpp.o
 
 c11_support.i: c11_support.cpp.i
@@ -167,7 +167,7 @@ c11_support.i: c11_support.cpp.i
 
 # target to preprocess a source file
 c11_support.cpp.i:
-	cd /home/guotiezheng/avalon/outTEE_workload.b/build && $(MAKE) -f crypto/CMakeFiles/CryptoFunc.dir/build.make crypto/CMakeFiles/CryptoFunc.dir/c11_support.cpp.i
+	cd /home/guotiezheng/avalon/outTEE_workload/build && $(MAKE) -f crypto/CMakeFiles/CryptoFunc.dir/build.make crypto/CMakeFiles/CryptoFunc.dir/c11_support.cpp.i
 .PHONY : c11_support.cpp.i
 
 c11_support.s: c11_support.cpp.s
@@ -176,7 +176,7 @@ c11_support.s: c11_support.cpp.s
 
 # target to generate assembly for a file
 c11_support.cpp.s:
-	cd /home/guotiezheng/avalon/outTEE_workload.b/build && $(MAKE) -f crypto/CMakeFiles/CryptoFunc.dir/build.make crypto/CMakeFiles/CryptoFunc.dir/c11_support.cpp.s
+	cd /home/guotiezheng/avalon/outTEE_workload/build && $(MAKE) -f crypto/CMakeFiles/CryptoFunc.dir/build.make crypto/CMakeFiles/CryptoFunc.dir/c11_support.cpp.s
 .PHONY : c11_support.cpp.s
 
 crypto_helper.o: crypto_helper.cpp.o
@@ -185,7 +185,7 @@ crypto_helper.o: crypto_helper.cpp.o
 
 # target to build an object file
 crypto_helper.cpp.o:
-	cd /home/guotiezheng/avalon/outTEE_workload.b/build && $(MAKE) -f crypto/CMakeFiles/CryptoFunc.dir/build.make crypto/CMakeFiles/CryptoFunc.dir/crypto_helper.cpp.o
+	cd /home/guotiezheng/avalon/outTEE_workload/build && $(MAKE) -f crypto/CMakeFiles/CryptoFunc.dir/build.make crypto/CMakeFiles/CryptoFunc.dir/crypto_helper.cpp.o
 .PHONY : crypto_helper.cpp.o
 
 crypto_helper.i: crypto_helper.cpp.i
@@ -194,7 +194,7 @@ crypto_helper.i: crypto_helper.cpp.i
 
 # target to preprocess a source file
 crypto_helper.cpp.i:
-	cd /home/guotiezheng/avalon/outTEE_workload.b/build && $(MAKE) -f crypto/CMakeFiles/CryptoFunc.dir/build.make crypto/CMakeFiles/CryptoFunc.dir/crypto_helper.cpp.i
+	cd /home/guotiezheng/avalon/outTEE_workload/build && $(MAKE) -f crypto/CMakeFiles/CryptoFunc.dir/build.make crypto/CMakeFiles/CryptoFunc.dir/crypto_helper.cpp.i
 .PHONY : crypto_helper.cpp.i
 
 crypto_helper.s: crypto_helper.cpp.s
@@ -203,7 +203,7 @@ crypto_helper.s: crypto_helper.cpp.s
 
 # target to generate assembly for a file
 crypto_helper.cpp.s:
-	cd /home/guotiezheng/avalon/outTEE_workload.b/build && $(MAKE) -f crypto/CMakeFiles/CryptoFunc.dir/build.make crypto/CMakeFiles/CryptoFunc.dir/crypto_helper.cpp.s
+	cd /home/guotiezheng/avalon/outTEE_workload/build && $(MAKE) -f crypto/CMakeFiles/CryptoFunc.dir/build.make crypto/CMakeFiles/CryptoFunc.dir/crypto_helper.cpp.s
 .PHONY : crypto_helper.cpp.s
 
 crypto_utils.o: crypto_utils.cpp.o
@@ -212,7 +212,7 @@ crypto_utils.o: crypto_utils.cpp.o
 
 # target to build an object file
 crypto_utils.cpp.o:
-	cd /home/guotiezheng/avalon/outTEE_workload.b/build && $(MAKE) -f crypto/CMakeFiles/CryptoFunc.dir/build.make crypto/CMakeFiles/CryptoFunc.dir/crypto_utils.cpp.o
+	cd /home/guotiezheng/avalon/outTEE_workload/build && $(MAKE) -f crypto/CMakeFiles/CryptoFunc.dir/build.make crypto/CMakeFiles/CryptoFunc.dir/crypto_utils.cpp.o
 .PHONY : crypto_utils.cpp.o
 
 crypto_utils.i: crypto_utils.cpp.i
@@ -221,7 +221,7 @@ crypto_utils.i: crypto_utils.cpp.i
 
 # target to preprocess a source file
 crypto_utils.cpp.i:
-	cd /home/guotiezheng/avalon/outTEE_workload.b/build && $(MAKE) -f crypto/CMakeFiles/CryptoFunc.dir/build.make crypto/CMakeFiles/CryptoFunc.dir/crypto_utils.cpp.i
+	cd /home/guotiezheng/avalon/outTEE_workload/build && $(MAKE) -f crypto/CMakeFiles/CryptoFunc.dir/build.make crypto/CMakeFiles/CryptoFunc.dir/crypto_utils.cpp.i
 .PHONY : crypto_utils.cpp.i
 
 crypto_utils.s: crypto_utils.cpp.s
@@ -230,7 +230,7 @@ crypto_utils.s: crypto_utils.cpp.s
 
 # target to generate assembly for a file
 crypto_utils.cpp.s:
-	cd /home/guotiezheng/avalon/outTEE_workload.b/build && $(MAKE) -f crypto/CMakeFiles/CryptoFunc.dir/build.make crypto/CMakeFiles/CryptoFunc.dir/crypto_utils.cpp.s
+	cd /home/guotiezheng/avalon/outTEE_workload/build && $(MAKE) -f crypto/CMakeFiles/CryptoFunc.dir/build.make crypto/CMakeFiles/CryptoFunc.dir/crypto_utils.cpp.s
 .PHONY : crypto_utils.cpp.s
 
 crypto_utils_encrypt.o: crypto_utils_encrypt.cpp.o
@@ -239,7 +239,7 @@ crypto_utils_encrypt.o: crypto_utils_encrypt.cpp.o
 
 # target to build an object file
 crypto_utils_encrypt.cpp.o:
-	cd /home/guotiezheng/avalon/outTEE_workload.b/build && $(MAKE) -f crypto/CMakeFiles/CryptoFunc.dir/build.make crypto/CMakeFiles/CryptoFunc.dir/crypto_utils_encrypt.cpp.o
+	cd /home/guotiezheng/avalon/outTEE_workload/build && $(MAKE) -f crypto/CMakeFiles/CryptoFunc.dir/build.make crypto/CMakeFiles/CryptoFunc.dir/crypto_utils_encrypt.cpp.o
 .PHONY : crypto_utils_encrypt.cpp.o
 
 crypto_utils_encrypt.i: crypto_utils_encrypt.cpp.i
@@ -248,7 +248,7 @@ crypto_utils_encrypt.i: crypto_utils_encrypt.cpp.i
 
 # target to preprocess a source file
 crypto_utils_encrypt.cpp.i:
-	cd /home/guotiezheng/avalon/outTEE_workload.b/build && $(MAKE) -f crypto/CMakeFiles/CryptoFunc.dir/build.make crypto/CMakeFiles/CryptoFunc.dir/crypto_utils_encrypt.cpp.i
+	cd /home/guotiezheng/avalon/outTEE_workload/build && $(MAKE) -f crypto/CMakeFiles/CryptoFunc.dir/build.make crypto/CMakeFiles/CryptoFunc.dir/crypto_utils_encrypt.cpp.i
 .PHONY : crypto_utils_encrypt.cpp.i
 
 crypto_utils_encrypt.s: crypto_utils_encrypt.cpp.s
@@ -257,7 +257,7 @@ crypto_utils_encrypt.s: crypto_utils_encrypt.cpp.s
 
 # target to generate assembly for a file
 crypto_utils_encrypt.cpp.s:
-	cd /home/guotiezheng/avalon/outTEE_workload.b/build && $(MAKE) -f crypto/CMakeFiles/CryptoFunc.dir/build.make crypto/CMakeFiles/CryptoFunc.dir/crypto_utils_encrypt.cpp.s
+	cd /home/guotiezheng/avalon/outTEE_workload/build && $(MAKE) -f crypto/CMakeFiles/CryptoFunc.dir/build.make crypto/CMakeFiles/CryptoFunc.dir/crypto_utils_encrypt.cpp.s
 .PHONY : crypto_utils_encrypt.cpp.s
 
 hex_string.o: hex_string.cpp.o
@@ -266,7 +266,7 @@ hex_string.o: hex_string.cpp.o
 
 # target to build an object file
 hex_string.cpp.o:
-	cd /home/guotiezheng/avalon/outTEE_workload.b/build && $(MAKE) -f crypto/CMakeFiles/CryptoFunc.dir/build.make crypto/CMakeFiles/CryptoFunc.dir/hex_string.cpp.o
+	cd /home/guotiezheng/avalon/outTEE_workload/build && $(MAKE) -f crypto/CMakeFiles/CryptoFunc.dir/build.make crypto/CMakeFiles/CryptoFunc.dir/hex_string.cpp.o
 .PHONY : hex_string.cpp.o
 
 hex_string.i: hex_string.cpp.i
@@ -275,7 +275,7 @@ hex_string.i: hex_string.cpp.i
 
 # target to preprocess a source file
 hex_string.cpp.i:
-	cd /home/guotiezheng/avalon/outTEE_workload.b/build && $(MAKE) -f crypto/CMakeFiles/CryptoFunc.dir/build.make crypto/CMakeFiles/CryptoFunc.dir/hex_string.cpp.i
+	cd /home/guotiezheng/avalon/outTEE_workload/build && $(MAKE) -f crypto/CMakeFiles/CryptoFunc.dir/build.make crypto/CMakeFiles/CryptoFunc.dir/hex_string.cpp.i
 .PHONY : hex_string.cpp.i
 
 hex_string.s: hex_string.cpp.s
@@ -284,7 +284,7 @@ hex_string.s: hex_string.cpp.s
 
 # target to generate assembly for a file
 hex_string.cpp.s:
-	cd /home/guotiezheng/avalon/outTEE_workload.b/build && $(MAKE) -f crypto/CMakeFiles/CryptoFunc.dir/build.make crypto/CMakeFiles/CryptoFunc.dir/hex_string.cpp.s
+	cd /home/guotiezheng/avalon/outTEE_workload/build && $(MAKE) -f crypto/CMakeFiles/CryptoFunc.dir/build.make crypto/CMakeFiles/CryptoFunc.dir/hex_string.cpp.s
 .PHONY : hex_string.cpp.s
 
 json_utils.o: json_utils.cpp.o
@@ -293,7 +293,7 @@ json_utils.o: json_utils.cpp.o
 
 # target to build an object file
 json_utils.cpp.o:
-	cd /home/guotiezheng/avalon/outTEE_workload.b/build && $(MAKE) -f crypto/CMakeFiles/CryptoFunc.dir/build.make crypto/CMakeFiles/CryptoFunc.dir/json_utils.cpp.o
+	cd /home/guotiezheng/avalon/outTEE_workload/build && $(MAKE) -f crypto/CMakeFiles/CryptoFunc.dir/build.make crypto/CMakeFiles/CryptoFunc.dir/json_utils.cpp.o
 .PHONY : json_utils.cpp.o
 
 json_utils.i: json_utils.cpp.i
@@ -302,7 +302,7 @@ json_utils.i: json_utils.cpp.i
 
 # target to preprocess a source file
 json_utils.cpp.i:
-	cd /home/guotiezheng/avalon/outTEE_workload.b/build && $(MAKE) -f crypto/CMakeFiles/CryptoFunc.dir/build.make crypto/CMakeFiles/CryptoFunc.dir/json_utils.cpp.i
+	cd /home/guotiezheng/avalon/outTEE_workload/build && $(MAKE) -f crypto/CMakeFiles/CryptoFunc.dir/build.make crypto/CMakeFiles/CryptoFunc.dir/json_utils.cpp.i
 .PHONY : json_utils.cpp.i
 
 json_utils.s: json_utils.cpp.s
@@ -311,7 +311,7 @@ json_utils.s: json_utils.cpp.s
 
 # target to generate assembly for a file
 json_utils.cpp.s:
-	cd /home/guotiezheng/avalon/outTEE_workload.b/build && $(MAKE) -f crypto/CMakeFiles/CryptoFunc.dir/build.make crypto/CMakeFiles/CryptoFunc.dir/json_utils.cpp.s
+	cd /home/guotiezheng/avalon/outTEE_workload/build && $(MAKE) -f crypto/CMakeFiles/CryptoFunc.dir/build.make crypto/CMakeFiles/CryptoFunc.dir/json_utils.cpp.s
 .PHONY : json_utils.cpp.s
 
 parson.o: parson.cpp.o
@@ -320,7 +320,7 @@ parson.o: parson.cpp.o
 
 # target to build an object file
 parson.cpp.o:
-	cd /home/guotiezheng/avalon/outTEE_workload.b/build && $(MAKE) -f crypto/CMakeFiles/CryptoFunc.dir/build.make crypto/CMakeFiles/CryptoFunc.dir/parson.cpp.o
+	cd /home/guotiezheng/avalon/outTEE_workload/build && $(MAKE) -f crypto/CMakeFiles/CryptoFunc.dir/build.make crypto/CMakeFiles/CryptoFunc.dir/parson.cpp.o
 .PHONY : parson.cpp.o
 
 parson.i: parson.cpp.i
@@ -329,7 +329,7 @@ parson.i: parson.cpp.i
 
 # target to preprocess a source file
 parson.cpp.i:
-	cd /home/guotiezheng/avalon/outTEE_workload.b/build && $(MAKE) -f crypto/CMakeFiles/CryptoFunc.dir/build.make crypto/CMakeFiles/CryptoFunc.dir/parson.cpp.i
+	cd /home/guotiezheng/avalon/outTEE_workload/build && $(MAKE) -f crypto/CMakeFiles/CryptoFunc.dir/build.make crypto/CMakeFiles/CryptoFunc.dir/parson.cpp.i
 .PHONY : parson.cpp.i
 
 parson.s: parson.cpp.s
@@ -338,7 +338,7 @@ parson.s: parson.cpp.s
 
 # target to generate assembly for a file
 parson.cpp.s:
-	cd /home/guotiezheng/avalon/outTEE_workload.b/build && $(MAKE) -f crypto/CMakeFiles/CryptoFunc.dir/build.make crypto/CMakeFiles/CryptoFunc.dir/parson.cpp.s
+	cd /home/guotiezheng/avalon/outTEE_workload/build && $(MAKE) -f crypto/CMakeFiles/CryptoFunc.dir/build.make crypto/CMakeFiles/CryptoFunc.dir/parson.cpp.s
 .PHONY : parson.cpp.s
 
 pkenc_private_key.o: pkenc_private_key.cpp.o
@@ -347,7 +347,7 @@ pkenc_private_key.o: pkenc_private_key.cpp.o
 
 # target to build an object file
 pkenc_private_key.cpp.o:
-	cd /home/guotiezheng/avalon/outTEE_workload.b/build && $(MAKE) -f crypto/CMakeFiles/CryptoFunc.dir/build.make crypto/CMakeFiles/CryptoFunc.dir/pkenc_private_key.cpp.o
+	cd /home/guotiezheng/avalon/outTEE_workload/build && $(MAKE) -f crypto/CMakeFiles/CryptoFunc.dir/build.make crypto/CMakeFiles/CryptoFunc.dir/pkenc_private_key.cpp.o
 .PHONY : pkenc_private_key.cpp.o
 
 pkenc_private_key.i: pkenc_private_key.cpp.i
@@ -356,7 +356,7 @@ pkenc_private_key.i: pkenc_private_key.cpp.i
 
 # target to preprocess a source file
 pkenc_private_key.cpp.i:
-	cd /home/guotiezheng/avalon/outTEE_workload.b/build && $(MAKE) -f crypto/CMakeFiles/CryptoFunc.dir/build.make crypto/CMakeFiles/CryptoFunc.dir/pkenc_private_key.cpp.i
+	cd /home/guotiezheng/avalon/outTEE_workload/build && $(MAKE) -f crypto/CMakeFiles/CryptoFunc.dir/build.make crypto/CMakeFiles/CryptoFunc.dir/pkenc_private_key.cpp.i
 .PHONY : pkenc_private_key.cpp.i
 
 pkenc_private_key.s: pkenc_private_key.cpp.s
@@ -365,7 +365,7 @@ pkenc_private_key.s: pkenc_private_key.cpp.s
 
 # target to generate assembly for a file
 pkenc_private_key.cpp.s:
-	cd /home/guotiezheng/avalon/outTEE_workload.b/build && $(MAKE) -f crypto/CMakeFiles/CryptoFunc.dir/build.make crypto/CMakeFiles/CryptoFunc.dir/pkenc_private_key.cpp.s
+	cd /home/guotiezheng/avalon/outTEE_workload/build && $(MAKE) -f crypto/CMakeFiles/CryptoFunc.dir/build.make crypto/CMakeFiles/CryptoFunc.dir/pkenc_private_key.cpp.s
 .PHONY : pkenc_private_key.cpp.s
 
 pkenc_private_key_common.o: pkenc_private_key_common.cpp.o
@@ -374,7 +374,7 @@ pkenc_private_key_common.o: pkenc_private_key_common.cpp.o
 
 # target to build an object file
 pkenc_private_key_common.cpp.o:
-	cd /home/guotiezheng/avalon/outTEE_workload.b/build && $(MAKE) -f crypto/CMakeFiles/CryptoFunc.dir/build.make crypto/CMakeFiles/CryptoFunc.dir/pkenc_private_key_common.cpp.o
+	cd /home/guotiezheng/avalon/outTEE_workload/build && $(MAKE) -f crypto/CMakeFiles/CryptoFunc.dir/build.make crypto/CMakeFiles/CryptoFunc.dir/pkenc_private_key_common.cpp.o
 .PHONY : pkenc_private_key_common.cpp.o
 
 pkenc_private_key_common.i: pkenc_private_key_common.cpp.i
@@ -383,7 +383,7 @@ pkenc_private_key_common.i: pkenc_private_key_common.cpp.i
 
 # target to preprocess a source file
 pkenc_private_key_common.cpp.i:
-	cd /home/guotiezheng/avalon/outTEE_workload.b/build && $(MAKE) -f crypto/CMakeFiles/CryptoFunc.dir/build.make crypto/CMakeFiles/CryptoFunc.dir/pkenc_private_key_common.cpp.i
+	cd /home/guotiezheng/avalon/outTEE_workload/build && $(MAKE) -f crypto/CMakeFiles/CryptoFunc.dir/build.make crypto/CMakeFiles/CryptoFunc.dir/pkenc_private_key_common.cpp.i
 .PHONY : pkenc_private_key_common.cpp.i
 
 pkenc_private_key_common.s: pkenc_private_key_common.cpp.s
@@ -392,7 +392,7 @@ pkenc_private_key_common.s: pkenc_private_key_common.cpp.s
 
 # target to generate assembly for a file
 pkenc_private_key_common.cpp.s:
-	cd /home/guotiezheng/avalon/outTEE_workload.b/build && $(MAKE) -f crypto/CMakeFiles/CryptoFunc.dir/build.make crypto/CMakeFiles/CryptoFunc.dir/pkenc_private_key_common.cpp.s
+	cd /home/guotiezheng/avalon/outTEE_workload/build && $(MAKE) -f crypto/CMakeFiles/CryptoFunc.dir/build.make crypto/CMakeFiles/CryptoFunc.dir/pkenc_private_key_common.cpp.s
 .PHONY : pkenc_private_key_common.cpp.s
 
 pkenc_public_key.o: pkenc_public_key.cpp.o
@@ -401,7 +401,7 @@ pkenc_public_key.o: pkenc_public_key.cpp.o
 
 # target to build an object file
 pkenc_public_key.cpp.o:
-	cd /home/guotiezheng/avalon/outTEE_workload.b/build && $(MAKE) -f crypto/CMakeFiles/CryptoFunc.dir/build.make crypto/CMakeFiles/CryptoFunc.dir/pkenc_public_key.cpp.o
+	cd /home/guotiezheng/avalon/outTEE_workload/build && $(MAKE) -f crypto/CMakeFiles/CryptoFunc.dir/build.make crypto/CMakeFiles/CryptoFunc.dir/pkenc_public_key.cpp.o
 .PHONY : pkenc_public_key.cpp.o
 
 pkenc_public_key.i: pkenc_public_key.cpp.i
@@ -410,7 +410,7 @@ pkenc_public_key.i: pkenc_public_key.cpp.i
 
 # target to preprocess a source file
 pkenc_public_key.cpp.i:
-	cd /home/guotiezheng/avalon/outTEE_workload.b/build && $(MAKE) -f crypto/CMakeFiles/CryptoFunc.dir/build.make crypto/CMakeFiles/CryptoFunc.dir/pkenc_public_key.cpp.i
+	cd /home/guotiezheng/avalon/outTEE_workload/build && $(MAKE) -f crypto/CMakeFiles/CryptoFunc.dir/build.make crypto/CMakeFiles/CryptoFunc.dir/pkenc_public_key.cpp.i
 .PHONY : pkenc_public_key.cpp.i
 
 pkenc_public_key.s: pkenc_public_key.cpp.s
@@ -419,7 +419,7 @@ pkenc_public_key.s: pkenc_public_key.cpp.s
 
 # target to generate assembly for a file
 pkenc_public_key.cpp.s:
-	cd /home/guotiezheng/avalon/outTEE_workload.b/build && $(MAKE) -f crypto/CMakeFiles/CryptoFunc.dir/build.make crypto/CMakeFiles/CryptoFunc.dir/pkenc_public_key.cpp.s
+	cd /home/guotiezheng/avalon/outTEE_workload/build && $(MAKE) -f crypto/CMakeFiles/CryptoFunc.dir/build.make crypto/CMakeFiles/CryptoFunc.dir/pkenc_public_key.cpp.s
 .PHONY : pkenc_public_key.cpp.s
 
 pkenc_public_key_common.o: pkenc_public_key_common.cpp.o
@@ -428,7 +428,7 @@ pkenc_public_key_common.o: pkenc_public_key_common.cpp.o
 
 # target to build an object file
 pkenc_public_key_common.cpp.o:
-	cd /home/guotiezheng/avalon/outTEE_workload.b/build && $(MAKE) -f crypto/CMakeFiles/CryptoFunc.dir/build.make crypto/CMakeFiles/CryptoFunc.dir/pkenc_public_key_common.cpp.o
+	cd /home/guotiezheng/avalon/outTEE_workload/build && $(MAKE) -f crypto/CMakeFiles/CryptoFunc.dir/build.make crypto/CMakeFiles/CryptoFunc.dir/pkenc_public_key_common.cpp.o
 .PHONY : pkenc_public_key_common.cpp.o
 
 pkenc_public_key_common.i: pkenc_public_key_common.cpp.i
@@ -437,7 +437,7 @@ pkenc_public_key_common.i: pkenc_public_key_common.cpp.i
 
 # target to preprocess a source file
 pkenc_public_key_common.cpp.i:
-	cd /home/guotiezheng/avalon/outTEE_workload.b/build && $(MAKE) -f crypto/CMakeFiles/CryptoFunc.dir/build.make crypto/CMakeFiles/CryptoFunc.dir/pkenc_public_key_common.cpp.i
+	cd /home/guotiezheng/avalon/outTEE_workload/build && $(MAKE) -f crypto/CMakeFiles/CryptoFunc.dir/build.make crypto/CMakeFiles/CryptoFunc.dir/pkenc_public_key_common.cpp.i
 .PHONY : pkenc_public_key_common.cpp.i
 
 pkenc_public_key_common.s: pkenc_public_key_common.cpp.s
@@ -446,7 +446,7 @@ pkenc_public_key_common.s: pkenc_public_key_common.cpp.s
 
 # target to generate assembly for a file
 pkenc_public_key_common.cpp.s:
-	cd /home/guotiezheng/avalon/outTEE_workload.b/build && $(MAKE) -f crypto/CMakeFiles/CryptoFunc.dir/build.make crypto/CMakeFiles/CryptoFunc.dir/pkenc_public_key_common.cpp.s
+	cd /home/guotiezheng/avalon/outTEE_workload/build && $(MAKE) -f crypto/CMakeFiles/CryptoFunc.dir/build.make crypto/CMakeFiles/CryptoFunc.dir/pkenc_public_key_common.cpp.s
 .PHONY : pkenc_public_key_common.cpp.s
 
 sig_private_key.o: sig_private_key.cpp.o
@@ -455,7 +455,7 @@ sig_private_key.o: sig_private_key.cpp.o
 
 # target to build an object file
 sig_private_key.cpp.o:
-	cd /home/guotiezheng/avalon/outTEE_workload.b/build && $(MAKE) -f crypto/CMakeFiles/CryptoFunc.dir/build.make crypto/CMakeFiles/CryptoFunc.dir/sig_private_key.cpp.o
+	cd /home/guotiezheng/avalon/outTEE_workload/build && $(MAKE) -f crypto/CMakeFiles/CryptoFunc.dir/build.make crypto/CMakeFiles/CryptoFunc.dir/sig_private_key.cpp.o
 .PHONY : sig_private_key.cpp.o
 
 sig_private_key.i: sig_private_key.cpp.i
@@ -464,7 +464,7 @@ sig_private_key.i: sig_private_key.cpp.i
 
 # target to preprocess a source file
 sig_private_key.cpp.i:
-	cd /home/guotiezheng/avalon/outTEE_workload.b/build && $(MAKE) -f crypto/CMakeFiles/CryptoFunc.dir/build.make crypto/CMakeFiles/CryptoFunc.dir/sig_private_key.cpp.i
+	cd /home/guotiezheng/avalon/outTEE_workload/build && $(MAKE) -f crypto/CMakeFiles/CryptoFunc.dir/build.make crypto/CMakeFiles/CryptoFunc.dir/sig_private_key.cpp.i
 .PHONY : sig_private_key.cpp.i
 
 sig_private_key.s: sig_private_key.cpp.s
@@ -473,7 +473,7 @@ sig_private_key.s: sig_private_key.cpp.s
 
 # target to generate assembly for a file
 sig_private_key.cpp.s:
-	cd /home/guotiezheng/avalon/outTEE_workload.b/build && $(MAKE) -f crypto/CMakeFiles/CryptoFunc.dir/build.make crypto/CMakeFiles/CryptoFunc.dir/sig_private_key.cpp.s
+	cd /home/guotiezheng/avalon/outTEE_workload/build && $(MAKE) -f crypto/CMakeFiles/CryptoFunc.dir/build.make crypto/CMakeFiles/CryptoFunc.dir/sig_private_key.cpp.s
 .PHONY : sig_private_key.cpp.s
 
 sig_private_key_common.o: sig_private_key_common.cpp.o
@@ -482,7 +482,7 @@ sig_private_key_common.o: sig_private_key_common.cpp.o
 
 # target to build an object file
 sig_private_key_common.cpp.o:
-	cd /home/guotiezheng/avalon/outTEE_workload.b/build && $(MAKE) -f crypto/CMakeFiles/CryptoFunc.dir/build.make crypto/CMakeFiles/CryptoFunc.dir/sig_private_key_common.cpp.o
+	cd /home/guotiezheng/avalon/outTEE_workload/build && $(MAKE) -f crypto/CMakeFiles/CryptoFunc.dir/build.make crypto/CMakeFiles/CryptoFunc.dir/sig_private_key_common.cpp.o
 .PHONY : sig_private_key_common.cpp.o
 
 sig_private_key_common.i: sig_private_key_common.cpp.i
@@ -491,7 +491,7 @@ sig_private_key_common.i: sig_private_key_common.cpp.i
 
 # target to preprocess a source file
 sig_private_key_common.cpp.i:
-	cd /home/guotiezheng/avalon/outTEE_workload.b/build && $(MAKE) -f crypto/CMakeFiles/CryptoFunc.dir/build.make crypto/CMakeFiles/CryptoFunc.dir/sig_private_key_common.cpp.i
+	cd /home/guotiezheng/avalon/outTEE_workload/build && $(MAKE) -f crypto/CMakeFiles/CryptoFunc.dir/build.make crypto/CMakeFiles/CryptoFunc.dir/sig_private_key_common.cpp.i
 .PHONY : sig_private_key_common.cpp.i
 
 sig_private_key_common.s: sig_private_key_common.cpp.s
@@ -500,7 +500,7 @@ sig_private_key_common.s: sig_private_key_common.cpp.s
 
 # target to generate assembly for a file
 sig_private_key_common.cpp.s:
-	cd /home/guotiezheng/avalon/outTEE_workload.b/build && $(MAKE) -f crypto/CMakeFiles/CryptoFunc.dir/build.make crypto/CMakeFiles/CryptoFunc.dir/sig_private_key_common.cpp.s
+	cd /home/guotiezheng/avalon/outTEE_workload/build && $(MAKE) -f crypto/CMakeFiles/CryptoFunc.dir/build.make crypto/CMakeFiles/CryptoFunc.dir/sig_private_key_common.cpp.s
 .PHONY : sig_private_key_common.cpp.s
 
 sig_public_key.o: sig_public_key.cpp.o
@@ -509,7 +509,7 @@ sig_public_key.o: sig_public_key.cpp.o
 
 # target to build an object file
 sig_public_key.cpp.o:
-	cd /home/guotiezheng/avalon/outTEE_workload.b/build && $(MAKE) -f crypto/CMakeFiles/CryptoFunc.dir/build.make crypto/CMakeFiles/CryptoFunc.dir/sig_public_key.cpp.o
+	cd /home/guotiezheng/avalon/outTEE_workload/build && $(MAKE) -f crypto/CMakeFiles/CryptoFunc.dir/build.make crypto/CMakeFiles/CryptoFunc.dir/sig_public_key.cpp.o
 .PHONY : sig_public_key.cpp.o
 
 sig_public_key.i: sig_public_key.cpp.i
@@ -518,7 +518,7 @@ sig_public_key.i: sig_public_key.cpp.i
 
 # target to preprocess a source file
 sig_public_key.cpp.i:
-	cd /home/guotiezheng/avalon/outTEE_workload.b/build && $(MAKE) -f crypto/CMakeFiles/CryptoFunc.dir/build.make crypto/CMakeFiles/CryptoFunc.dir/sig_public_key.cpp.i
+	cd /home/guotiezheng/avalon/outTEE_workload/build && $(MAKE) -f crypto/CMakeFiles/CryptoFunc.dir/build.make crypto/CMakeFiles/CryptoFunc.dir/sig_public_key.cpp.i
 .PHONY : sig_public_key.cpp.i
 
 sig_public_key.s: sig_public_key.cpp.s
@@ -527,7 +527,7 @@ sig_public_key.s: sig_public_key.cpp.s
 
 # target to generate assembly for a file
 sig_public_key.cpp.s:
-	cd /home/guotiezheng/avalon/outTEE_workload.b/build && $(MAKE) -f crypto/CMakeFiles/CryptoFunc.dir/build.make crypto/CMakeFiles/CryptoFunc.dir/sig_public_key.cpp.s
+	cd /home/guotiezheng/avalon/outTEE_workload/build && $(MAKE) -f crypto/CMakeFiles/CryptoFunc.dir/build.make crypto/CMakeFiles/CryptoFunc.dir/sig_public_key.cpp.s
 .PHONY : sig_public_key.cpp.s
 
 sig_public_key_common.o: sig_public_key_common.cpp.o
@@ -536,7 +536,7 @@ sig_public_key_common.o: sig_public_key_common.cpp.o
 
 # target to build an object file
 sig_public_key_common.cpp.o:
-	cd /home/guotiezheng/avalon/outTEE_workload.b/build && $(MAKE) -f crypto/CMakeFiles/CryptoFunc.dir/build.make crypto/CMakeFiles/CryptoFunc.dir/sig_public_key_common.cpp.o
+	cd /home/guotiezheng/avalon/outTEE_workload/build && $(MAKE) -f crypto/CMakeFiles/CryptoFunc.dir/build.make crypto/CMakeFiles/CryptoFunc.dir/sig_public_key_common.cpp.o
 .PHONY : sig_public_key_common.cpp.o
 
 sig_public_key_common.i: sig_public_key_common.cpp.i
@@ -545,7 +545,7 @@ sig_public_key_common.i: sig_public_key_common.cpp.i
 
 # target to preprocess a source file
 sig_public_key_common.cpp.i:
-	cd /home/guotiezheng/avalon/outTEE_workload.b/build && $(MAKE) -f crypto/CMakeFiles/CryptoFunc.dir/build.make crypto/CMakeFiles/CryptoFunc.dir/sig_public_key_common.cpp.i
+	cd /home/guotiezheng/avalon/outTEE_workload/build && $(MAKE) -f crypto/CMakeFiles/CryptoFunc.dir/build.make crypto/CMakeFiles/CryptoFunc.dir/sig_public_key_common.cpp.i
 .PHONY : sig_public_key_common.cpp.i
 
 sig_public_key_common.s: sig_public_key_common.cpp.s
@@ -554,7 +554,7 @@ sig_public_key_common.s: sig_public_key_common.cpp.s
 
 # target to generate assembly for a file
 sig_public_key_common.cpp.s:
-	cd /home/guotiezheng/avalon/outTEE_workload.b/build && $(MAKE) -f crypto/CMakeFiles/CryptoFunc.dir/build.make crypto/CMakeFiles/CryptoFunc.dir/sig_public_key_common.cpp.s
+	cd /home/guotiezheng/avalon/outTEE_workload/build && $(MAKE) -f crypto/CMakeFiles/CryptoFunc.dir/build.make crypto/CMakeFiles/CryptoFunc.dir/sig_public_key_common.cpp.s
 .PHONY : sig_public_key_common.cpp.s
 
 skenc.o: skenc.cpp.o
@@ -563,7 +563,7 @@ skenc.o: skenc.cpp.o
 
 # target to build an object file
 skenc.cpp.o:
-	cd /home/guotiezheng/avalon/outTEE_workload.b/build && $(MAKE) -f crypto/CMakeFiles/CryptoFunc.dir/build.make crypto/CMakeFiles/CryptoFunc.dir/skenc.cpp.o
+	cd /home/guotiezheng/avalon/outTEE_workload/build && $(MAKE) -f crypto/CMakeFiles/CryptoFunc.dir/build.make crypto/CMakeFiles/CryptoFunc.dir/skenc.cpp.o
 .PHONY : skenc.cpp.o
 
 skenc.i: skenc.cpp.i
@@ -572,7 +572,7 @@ skenc.i: skenc.cpp.i
 
 # target to preprocess a source file
 skenc.cpp.i:
-	cd /home/guotiezheng/avalon/outTEE_workload.b/build && $(MAKE) -f crypto/CMakeFiles/CryptoFunc.dir/build.make crypto/CMakeFiles/CryptoFunc.dir/skenc.cpp.i
+	cd /home/guotiezheng/avalon/outTEE_workload/build && $(MAKE) -f crypto/CMakeFiles/CryptoFunc.dir/build.make crypto/CMakeFiles/CryptoFunc.dir/skenc.cpp.i
 .PHONY : skenc.cpp.i
 
 skenc.s: skenc.cpp.s
@@ -581,7 +581,7 @@ skenc.s: skenc.cpp.s
 
 # target to generate assembly for a file
 skenc.cpp.s:
-	cd /home/guotiezheng/avalon/outTEE_workload.b/build && $(MAKE) -f crypto/CMakeFiles/CryptoFunc.dir/build.make crypto/CMakeFiles/CryptoFunc.dir/skenc.cpp.s
+	cd /home/guotiezheng/avalon/outTEE_workload/build && $(MAKE) -f crypto/CMakeFiles/CryptoFunc.dir/build.make crypto/CMakeFiles/CryptoFunc.dir/skenc.cpp.s
 .PHONY : skenc.cpp.s
 
 skenc_common.o: skenc_common.cpp.o
@@ -590,7 +590,7 @@ skenc_common.o: skenc_common.cpp.o
 
 # target to build an object file
 skenc_common.cpp.o:
-	cd /home/guotiezheng/avalon/outTEE_workload.b/build && $(MAKE) -f crypto/CMakeFiles/CryptoFunc.dir/build.make crypto/CMakeFiles/CryptoFunc.dir/skenc_common.cpp.o
+	cd /home/guotiezheng/avalon/outTEE_workload/build && $(MAKE) -f crypto/CMakeFiles/CryptoFunc.dir/build.make crypto/CMakeFiles/CryptoFunc.dir/skenc_common.cpp.o
 .PHONY : skenc_common.cpp.o
 
 skenc_common.i: skenc_common.cpp.i
@@ -599,7 +599,7 @@ skenc_common.i: skenc_common.cpp.i
 
 # target to preprocess a source file
 skenc_common.cpp.i:
-	cd /home/guotiezheng/avalon/outTEE_workload.b/build && $(MAKE) -f crypto/CMakeFiles/CryptoFunc.dir/build.make crypto/CMakeFiles/CryptoFunc.dir/skenc_common.cpp.i
+	cd /home/guotiezheng/avalon/outTEE_workload/build && $(MAKE) -f crypto/CMakeFiles/CryptoFunc.dir/build.make crypto/CMakeFiles/CryptoFunc.dir/skenc_common.cpp.i
 .PHONY : skenc_common.cpp.i
 
 skenc_common.s: skenc_common.cpp.s
@@ -608,7 +608,7 @@ skenc_common.s: skenc_common.cpp.s
 
 # target to generate assembly for a file
 skenc_common.cpp.s:
-	cd /home/guotiezheng/avalon/outTEE_workload.b/build && $(MAKE) -f crypto/CMakeFiles/CryptoFunc.dir/build.make crypto/CMakeFiles/CryptoFunc.dir/skenc_common.cpp.s
+	cd /home/guotiezheng/avalon/outTEE_workload/build && $(MAKE) -f crypto/CMakeFiles/CryptoFunc.dir/build.make crypto/CMakeFiles/CryptoFunc.dir/skenc_common.cpp.s
 .PHONY : skenc_common.cpp.s
 
 types.o: types.cpp.o
@@ -617,7 +617,7 @@ types.o: types.cpp.o
 
 # target to build an object file
 types.cpp.o:
-	cd /home/guotiezheng/avalon/outTEE_workload.b/build && $(MAKE) -f crypto/CMakeFiles/CryptoFunc.dir/build.make crypto/CMakeFiles/CryptoFunc.dir/types.cpp.o
+	cd /home/guotiezheng/avalon/outTEE_workload/build && $(MAKE) -f crypto/CMakeFiles/CryptoFunc.dir/build.make crypto/CMakeFiles/CryptoFunc.dir/types.cpp.o
 .PHONY : types.cpp.o
 
 types.i: types.cpp.i
@@ -626,7 +626,7 @@ types.i: types.cpp.i
 
 # target to preprocess a source file
 types.cpp.i:
-	cd /home/guotiezheng/avalon/outTEE_workload.b/build && $(MAKE) -f crypto/CMakeFiles/CryptoFunc.dir/build.make crypto/CMakeFiles/CryptoFunc.dir/types.cpp.i
+	cd /home/guotiezheng/avalon/outTEE_workload/build && $(MAKE) -f crypto/CMakeFiles/CryptoFunc.dir/build.make crypto/CMakeFiles/CryptoFunc.dir/types.cpp.i
 .PHONY : types.cpp.i
 
 types.s: types.cpp.s
@@ -635,7 +635,7 @@ types.s: types.cpp.s
 
 # target to generate assembly for a file
 types.cpp.s:
-	cd /home/guotiezheng/avalon/outTEE_workload.b/build && $(MAKE) -f crypto/CMakeFiles/CryptoFunc.dir/build.make crypto/CMakeFiles/CryptoFunc.dir/types.cpp.s
+	cd /home/guotiezheng/avalon/outTEE_workload/build && $(MAKE) -f crypto/CMakeFiles/CryptoFunc.dir/build.make crypto/CMakeFiles/CryptoFunc.dir/types.cpp.s
 .PHONY : types.cpp.s
 
 utils.o: utils.cpp.o
@@ -644,7 +644,7 @@ utils.o: utils.cpp.o
 
 # target to build an object file
 utils.cpp.o:
-	cd /home/guotiezheng/avalon/outTEE_workload.b/build && $(MAKE) -f crypto/CMakeFiles/CryptoFunc.dir/build.make crypto/CMakeFiles/CryptoFunc.dir/utils.cpp.o
+	cd /home/guotiezheng/avalon/outTEE_workload/build && $(MAKE) -f crypto/CMakeFiles/CryptoFunc.dir/build.make crypto/CMakeFiles/CryptoFunc.dir/utils.cpp.o
 .PHONY : utils.cpp.o
 
 utils.i: utils.cpp.i
@@ -653,7 +653,7 @@ utils.i: utils.cpp.i
 
 # target to preprocess a source file
 utils.cpp.i:
-	cd /home/guotiezheng/avalon/outTEE_workload.b/build && $(MAKE) -f crypto/CMakeFiles/CryptoFunc.dir/build.make crypto/CMakeFiles/CryptoFunc.dir/utils.cpp.i
+	cd /home/guotiezheng/avalon/outTEE_workload/build && $(MAKE) -f crypto/CMakeFiles/CryptoFunc.dir/build.make crypto/CMakeFiles/CryptoFunc.dir/utils.cpp.i
 .PHONY : utils.cpp.i
 
 utils.s: utils.cpp.s
@@ -662,7 +662,7 @@ utils.s: utils.cpp.s
 
 # target to generate assembly for a file
 utils.cpp.s:
-	cd /home/guotiezheng/avalon/outTEE_workload.b/build && $(MAKE) -f crypto/CMakeFiles/CryptoFunc.dir/build.make crypto/CMakeFiles/CryptoFunc.dir/utils.cpp.s
+	cd /home/guotiezheng/avalon/outTEE_workload/build && $(MAKE) -f crypto/CMakeFiles/CryptoFunc.dir/build.make crypto/CMakeFiles/CryptoFunc.dir/utils.cpp.s
 .PHONY : utils.cpp.s
 
 verify_certificate.o: verify_certificate.cpp.o
@@ -671,7 +671,7 @@ verify_certificate.o: verify_certificate.cpp.o
 
 # target to build an object file
 verify_certificate.cpp.o:
-	cd /home/guotiezheng/avalon/outTEE_workload.b/build && $(MAKE) -f crypto/CMakeFiles/CryptoFunc.dir/build.make crypto/CMakeFiles/CryptoFunc.dir/verify_certificate.cpp.o
+	cd /home/guotiezheng/avalon/outTEE_workload/build && $(MAKE) -f crypto/CMakeFiles/CryptoFunc.dir/build.make crypto/CMakeFiles/CryptoFunc.dir/verify_certificate.cpp.o
 .PHONY : verify_certificate.cpp.o
 
 verify_certificate.i: verify_certificate.cpp.i
@@ -680,7 +680,7 @@ verify_certificate.i: verify_certificate.cpp.i
 
 # target to preprocess a source file
 verify_certificate.cpp.i:
-	cd /home/guotiezheng/avalon/outTEE_workload.b/build && $(MAKE) -f crypto/CMakeFiles/CryptoFunc.dir/build.make crypto/CMakeFiles/CryptoFunc.dir/verify_certificate.cpp.i
+	cd /home/guotiezheng/avalon/outTEE_workload/build && $(MAKE) -f crypto/CMakeFiles/CryptoFunc.dir/build.make crypto/CMakeFiles/CryptoFunc.dir/verify_certificate.cpp.i
 .PHONY : verify_certificate.cpp.i
 
 verify_certificate.s: verify_certificate.cpp.s
@@ -689,7 +689,7 @@ verify_certificate.s: verify_certificate.cpp.s
 
 # target to generate assembly for a file
 verify_certificate.cpp.s:
-	cd /home/guotiezheng/avalon/outTEE_workload.b/build && $(MAKE) -f crypto/CMakeFiles/CryptoFunc.dir/build.make crypto/CMakeFiles/CryptoFunc.dir/verify_certificate.cpp.s
+	cd /home/guotiezheng/avalon/outTEE_workload/build && $(MAKE) -f crypto/CMakeFiles/CryptoFunc.dir/build.make crypto/CMakeFiles/CryptoFunc.dir/verify_certificate.cpp.s
 .PHONY : verify_certificate.cpp.s
 
 verify_signature.o: verify_signature.cpp.o
@@ -698,7 +698,7 @@ verify_signature.o: verify_signature.cpp.o
 
 # target to build an object file
 verify_signature.cpp.o:
-	cd /home/guotiezheng/avalon/outTEE_workload.b/build && $(MAKE) -f crypto/CMakeFiles/CryptoFunc.dir/build.make crypto/CMakeFiles/CryptoFunc.dir/verify_signature.cpp.o
+	cd /home/guotiezheng/avalon/outTEE_workload/build && $(MAKE) -f crypto/CMakeFiles/CryptoFunc.dir/build.make crypto/CMakeFiles/CryptoFunc.dir/verify_signature.cpp.o
 .PHONY : verify_signature.cpp.o
 
 verify_signature.i: verify_signature.cpp.i
@@ -707,7 +707,7 @@ verify_signature.i: verify_signature.cpp.i
 
 # target to preprocess a source file
 verify_signature.cpp.i:
-	cd /home/guotiezheng/avalon/outTEE_workload.b/build && $(MAKE) -f crypto/CMakeFiles/CryptoFunc.dir/build.make crypto/CMakeFiles/CryptoFunc.dir/verify_signature.cpp.i
+	cd /home/guotiezheng/avalon/outTEE_workload/build && $(MAKE) -f crypto/CMakeFiles/CryptoFunc.dir/build.make crypto/CMakeFiles/CryptoFunc.dir/verify_signature.cpp.i
 .PHONY : verify_signature.cpp.i
 
 verify_signature.s: verify_signature.cpp.s
@@ -716,7 +716,7 @@ verify_signature.s: verify_signature.cpp.s
 
 # target to generate assembly for a file
 verify_signature.cpp.s:
-	cd /home/guotiezheng/avalon/outTEE_workload.b/build && $(MAKE) -f crypto/CMakeFiles/CryptoFunc.dir/build.make crypto/CMakeFiles/CryptoFunc.dir/verify_signature.cpp.s
+	cd /home/guotiezheng/avalon/outTEE_workload/build && $(MAKE) -f crypto/CMakeFiles/CryptoFunc.dir/build.make crypto/CMakeFiles/CryptoFunc.dir/verify_signature.cpp.s
 .PHONY : verify_signature.cpp.s
 
 # Help Target
@@ -805,6 +805,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/guotiezheng/avalon/outTEE_workload.b/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/guotiezheng/avalon/outTEE_workload/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 
