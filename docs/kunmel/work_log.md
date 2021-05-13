@@ -43,3 +43,12 @@ target_link_libraries(Demo OpenSSL::SSL)
   * 发现问题：我是傻逼
   * linux的可执行文件可以不用二进制的方式读而是直接使用普通的方式读写，直接生成string
   * 又不知道哪里出了问题，原本编写的build.sh不能正常生成原本的文件了,下次修改
+## 2021.5.12 
+  * 在outTEE中的加密解密都能够正常运行，但修改workload进行解密存在一些问题
+  * 希望的流是可执行文件加密为字符串存入txt，enclave内的workload读取txt，解密字符串，再写入文件得到可执行文件，workload调用可执行文件
+  * 目前的问题是，如何实现读取txt并解密后的文件写入
+  * 今日在workload上调用c++标准库花费了很多时间，原有标准库函数无法使用，可能原因是其中使用的是sgxsdk/include/libcxx中的库，与原有库不同(iostream\fstream)，其他库暂时没有看【在pdf中写到，大多数都跟普通c++使用一致，但另一些进行了重构】
+  ## 2021.5.13
+  * 暂时没有想到如何使用加密传输来的可执行文件
+  * 阅读了tc/sgx/tursted_worker_manager的代码并写了README
+  * 分析了enclave_manger下的代码

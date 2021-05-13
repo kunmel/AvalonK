@@ -15,7 +15,8 @@
 
 #include <string>
 #include "echo_logic.h"
-
+#include <iostream>
 std::string Process(std::string str_in) {
+    std::cout<< "123";
     return "RESULT: " + str_in;
 }
