@@ -40,7 +40,7 @@ class SingletonEnclaveManager(WOProcessorManager):
 
         super().__init__(config)
         self.proof_data_type = config.get("WorkerConfig")["ProofDataType"]
-        self._identity = self._worker_id
+        self._identity = self._worker_id # hex
 
 # -------------------------------------------------------------------------
 

@@ -28,7 +28,7 @@ singleton_enclave_manager.py中定义了SingletonEnclaveManager
 
 * setup_enclave(建立enclave base_enclave_manager.py)
   
-  * 创建signup_data，此数据是本实例中所有可信函数的秘钥
+  * 创建signup_data，此数据是本实例中所有可信函数的秘钥(_create_signup_data)
   
   * 获取各类秘钥、签名以及验证数据
   
@@ -45,5 +45,5 @@ singleton_enclave_manager.py中定义了SingletonEnclaveManager
     * 在数据库中注册新的worker，写入新的mapping. 对于worker pool而言，存储worker_id -> enclave_id1,enclave_id2. (worker pool中一个workerid对应多个enclave，每个enclave对应一个WPE？)
     
     * 清空这个workerid对应的所有原有响应、订单等信息。因为重新配置后对应的秘钥等变化，原有的不可用了。
-    
-    * 启动对订单的监听
+  
+  * 启动对订单的监听

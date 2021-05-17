@@ -49,6 +49,7 @@ zmq_port = '5555'
 # Supported attestation types are EPID and DCAP
 attestation_type = "EPID"
 
+# 修改这个变量会使创建enclave时创建一个序列，对num个enclave进行创建
 num_of_enclaves = "1"
 
 # TEE enclave library to use.
