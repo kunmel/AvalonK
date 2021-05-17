@@ -122,11 +122,11 @@ def main(args=None):
 
     (options, remainder) = parser.parse_known_args(args)
 
-    if options.config:
-        conf_files = options.config
+    if options.config:  
+        conf_files = options.config # options 默认为 None
 
     if options.config_dir:
-        conf_paths = options.config_dir
+        conf_paths = options.config_dir # options 默认为 None
 
     try:
         config = pconfig.parse_configuration_files(conf_files, conf_paths)
@@ -136,7 +136,7 @@ def main(args=None):
         sys.exit(-1)
 
     if options.worker_id:
-        config["WorkerConfig"]["worker_id"] = options.worker_id
+        config["WorkerConfig"]["worker_id"] = options.worker_id # options 默认为 None
 
     plogger.setup_loggers(config.get("Logging", {}))
     sys.stdout = plogger.stream_to_logger(

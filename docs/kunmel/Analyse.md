@@ -32,8 +32,6 @@ Avalon 的默认worker类型，同时管理密钥以及工作负载。
 
 SGX编程的核心，定义了Enclave与应用之间的ECALL/OCALL。ECALL定义在trusted区域，在enclave外调用，在enclave内执行。OCALL定义在untrusted，在enclvae内调用，在enclave外执行。
 
-
-
 # Analyse
 
 ### workload分析
@@ -66,4 +64,6 @@ workload是采用generic_client.py作为管理，这个文件是py文件，只�
 * 在使用I/O操作时都是通过TcfExecuteIoCommand发布命令，其中调用的是OCALL来发布命令。 OCALL指enclave外部调用。
 
 ### enclave setup分析
+
 * 在setup时，创建avalon-enclave-manager的容器时调用/enclave_manager/Dockerfile，最终调用setup_${ENCLAVE_TYPE}.py来创建enclave
+* 不同的setup_${ENCLAVE_TYPE}.py会使用不同的创建c++文件以及XXX_enclave_manager.py的main作为入口
