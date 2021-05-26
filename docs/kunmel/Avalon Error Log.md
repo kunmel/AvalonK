@@ -11,25 +11,39 @@
 **解决**：重新follow PREREQUISITES.md中的Intel sgx部分，发现sdk已正常安装，重新follow 'Intel SGX in Hardware Mode'部分，确认config/singleton_enclave_config.toml中EPID与ias_api_key已修改。完成后error解决，tests/Demo.py可正常运行。
 
 ### 2. 部署avalon docker容器时报错
+
 #### 2.1 出现solcx的问题
+
 此问题出现在部署avalon-shell时，avalon-shell使用avalon/docker/Dockerfile，其中包括
+
 ```
 python3 -m solcx.install v0.5.15
 ```
+
 此句语句意在py-solc-x安装后，安装其依赖solc，可通过`>>> from solcx import install_solc >>> install_solc('v0.4.25')`安装
 但此处需要将Dockerfile内此语句替换为
+
 ```
 RUN add-apt-repository ppa:ethereum/ethereum
 RUN apt-get update
 RUN apt-get install solc
 ```
+
 如此更改，删除avalon镜像后重新部署可以成功。
 
-#### 2.2 RK_PUB.zip问题
+似乎应该用这个替代：
 
-部署期间可能出现unzip RK_PUB.zip报错的问题，这是由于RK_PUB.zip地址已更换，在common/app/verify_ias_report/build_ias_certificates_cpp.sh中将其地址改为'https://community.intel.com/legacyfs/online/drupal_files/managed/7b/de/RK_PUB.zip'即可。
+```
+RUN python3 -c "from solcx import install_solc;install_solc('v0.5.15')"
+```
 
-### 3. 安装minifab
+
+
+#### 2.2 RK_PUB.zip问题(在原项目5月4日的更新后改动)
+
+部署期间可能出现unzip RK_PUB.zip报错的问题，这是由于RK_PUB.zip地址已更换，在common/cpp/verify_ias_report/build_ias_certificates_cpp.sh中将其地址改为'https://community.intel.com/legacyfs/online/drupal_files/managed/7b/de/RK_PUB.zip'即可。
+
+### 3. 安装minifab./generic_client.py -o --uri "http://avalon-listener:1947" \
 
 可以直接使用start_fabric.sh脚本进行安装，但需
 
@@ -43,15 +57,16 @@ RUN apt-get install solc
 export no_proxy=localhost,127.0.0.1,orderer3.example.com,orderer2.example.com,orderer1.example.com,peer2.org1.example.com,peer1.org1.example.com,peer2.org0.example.com,peer1.org0.example.com
 
 ### 4. 执行./generic_client.py出现的问题 （未全部解决，但此处所有问题在重新配置系统为Ubuntu18.04后均没有出现）
+
 #### 4.1  DNS resolution failed for service: peer1.org1.example.com:7051
 
 用```docker inspect --format='{{.Name}} - {{range.NetworkSettings.Networks}} {{.IPAddress}}{{end}}' $(docker ps -aq)```查询容器ip地址，并在avalon-shell内部安装vim，将地址写入容器内的/etc/hosts
 
 ```
-172.26.0.2 peer1.org0.example.com
-172.26.0.3 peer2.org0.example.com
-172.26.0.4 peer1.org1.example.com
-172.26.0.5 peer2.org1.example.com
+172.19.0.2 peer1.org0.example.com
+172.19.0.3 peer2.org0.example.com
+172.19.0.5 peer1.org1.example.com
+172.19.0.9 peer2.org1.example.com
 172.26.0.6 orderer1.example.com
 172.26.0.7 orderer2.example.com
 172.26.0.8 orderer3.example.com
@@ -93,7 +108,6 @@ Traceback (most recent call last):
   File "/project/avalon/examples/apps/generic_client/proxy_model_generic_client.py", line 60, in get_worker_details
     worker_id
 TypeError: 'NoneType' object is not iterable
-
 ```
 
 查看代码后发现/hfc/fabric/client.py的chaincode_query有None返回值，response中有如下问题
@@ -137,27 +151,14 @@ payload: "\n \363\337\2274\271:\324o\300\354\314\0171\241\024f\006\347A\337B\352
 
 找到blockchain_connecter/fabric下有fabric_connecter_service以及fabric_connecter中调用的base_connecter有注册worker的函数。（将blockchain以及kv storage中的worker信息同步）
 
-### 5.部署新的workload
-部署新的workload时，会将workload—tutorial中的helloworld复制到新的文件夹下，在遵循文档中的操作后，还需要对plug-in.cpp以及plug-in.h进行修改，其中plug-in.cpp需要
-```
-REGISTER_WORKLOAD_PROCESSOR(workload_id, Workload) / void Workload::ProcessWorkOrder(
-改为
-REGISTER_WORKLOAD_PROCESSOR("workload-master", WorkloadMaster) / void WorkloadMaster::ProcessWorkOrder(
-```
-plug-in.h需要
-```
-class Workload : public WorkloadProcessor {
-改为
-class WorkloadMaster : public WorkloadProcessor {
-```
-### 6.在avalon的io_helper中使用的加密相关
-* 在io_helper中使用的是**AES-GCM-256**加密方法:加密时需要随机生成256位的密钥以及96位的iv\数据\密钥进行加密
-* 此处采用的加密解密的过程都是读取文件内信息进行加密解密再写回的操作,并不是对文件进行加密
-* 加密使用了common/cpp/crypto下的库,开发外部加密时也采用了这个库
-* 这个库如果只用crypto等的话似乎与SGX并没有什么关系(?)
+### 5.尝试启动worker-pool出现问题(在tag中下载了pre-0.6版本，可以正常启动且能够执行order)
 
- ### 7.编写外部加密脚本
-* 加密使用了common/cpp/crypto下的库
-* 使用库时有一个相当复杂的CMake,但是通过将全部.cpp以及.h放入一个文件夹下解决了(笑
-* 可以通过在outTEEworkload下的build.sh脚本来自动化进行cmake\make\run的功能
-* 但暂时需要在test.cpp中修改加密文件的名称
+```
+avalon-wpe                | http.client.RemoteDisconnected: Remote end closed connection without response
+avalon-wpe                | [02:51:28 ERROR   avalon_enclave_manager.wpe_common.wpe_requester] Exception occurred in communication with KME
+avalon-wpe                | [02:51:28 ERROR   avalon_enclave_manager.work_order_processor_manager] Failed to execute boot time flow; exiting Intel SGX Enclave manager: no response from server: Remote end closed connection without response
+```
+
+完整版存于setup_workerpool_ERROR.txt
+
+创建kme成功后，创建wpe过程中向kme发送请求，没有收到响应。

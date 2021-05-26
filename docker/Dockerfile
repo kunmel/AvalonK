@@ -319,9 +319,7 @@ RUN packages="wget tar libsgx-dcap-default-qpl libsgx-dcap-quote-verify"; \
   fi;
 
 #RUN python3 -m solcx.install v0.5.0
-RUN add-apt-repository ppa:ethereum/ethereum
-RUN apt-get update
-RUN apt-get install solc
+RUN python3 -c "from solcx import install_solc;install_solc('v0.5.15')"
 
 ARG DISPLAY
 ARG XAUTHORITY

@@ -67,3 +67,41 @@ workload是采用generic_client.py作为管理，这个文件是py文件，只�
 
 * 在setup时，创建avalon-enclave-manager的容器时调用/enclave_manager/Dockerfile，最终调用setup_${ENCLAVE_TYPE}.py来创建enclave
 * 不同的setup_${ENCLAVE_TYPE}.py会使用不同的创建c++文件以及XXX_enclave_manager.py的main作为入口
+
+### 部署新的workload
+
+部署新的workload时，会将workload—tutorial中的helloworld复制到新的文件夹下，在遵循文档中的操作后，还需要对plug-in.cpp以及plug-in.h进行修改，其中plug-in.cpp需要
+
+```
+REGISTER_WORKLOAD_PROCESSOR(workload_id, Workload) / void Workload::ProcessWorkOrder(
+改为
+REGISTER_WORKLOAD_PROCESSOR("workload-master", WorkloadMaster) / void WorkloadMaster::ProcessWorkOrder(
+```
+
+plug-in.h需要
+
+```
+class Workload : public WorkloadProcessor {
+改为
+class WorkloadMaster : public WorkloadProcessor {
+```
+
+### 在avalon的io_helper中使用的加密相关
+
+- 在io_helper中使用的是**AES-GCM-256**加密方法:加密时需要随机生成256位的密钥以及96位的iv\数据\密钥进行加密
+
+- 此处采用的加密解密的过程都是读取文件内信息进行加密解密再写回的操作,并不是对文件进行加密
+
+- 加密使用了common/cpp/crypto下的库,开发外部加密时也采用了这个库
+
+- 这个库如果只用crypto等的话似乎与SGX并没有什么关系(?)
+
+### 编写外部加密脚本
+
+- 加密使用了common/cpp/crypto下的库
+
+- 使用库时有一个相当复杂的CMake,但是通过将全部.cpp以及.h放入一个文件夹下解决了(笑
+
+- 可以通过在outTEEworkload下的build.sh脚本来自动化进行cmake\make\run的功能
+
+- 但暂时需要在test.cpp中修改加密文件的名称

@@ -256,7 +256,7 @@ RUN platform=""; \
     && tar -xvf $MITIGATION_TOOLS \
     && cp external/toolset/$platform/* /usr/local/bin/ \
     && rm $MITIGATION_TOOLS \
-    && git clone -b lin_2.10_1.1.1g https://github.com/intel/intel-sgx-ssl.git  \
+    && git clone -b lin_2.10_1.1.1g https://gitee.com/mirrors/intel-sgx-ssl.git  \
     && . /opt/intel/sgxsdk/environment \
     && (cd intel-sgx-ssl/openssl_source; mv /tmp/openssl-$OPENSSL_VER.tar.gz . ) \
     && (cd intel-sgx-ssl/Linux; \

@@ -104,3 +104,30 @@
 * 阅读分析了enclave创建流程
 * 下一步实验能否创建多个singleton
 * 加载enclave是通过sgx_create_enclave函数实现的，enclave.cpp中的Enclave::LoadEnclave中调用了这个函数
+
+## 2021.5.20
+
+* 运行worker-pool启动失败，猜测某处通信断开，可能是依赖问题或地址问题。
+* 创建kme成功后，创建wpe过程中向kme发送请求，没有收到响应。
+
+## 2021.5.21
+
+* 尝试配置了pre-release0.6， 发现能够正常启动worker pool，但无法启动fabric proxy model。
+
+## 2021.5.25
+
+* 几天都在尝试配置worker pool以及pre-0.6，但仍未发现报错问题是什么。
+
+* pre-0.6能够正常建立worker pool但在fabric模式下仍会爆出之前的错误 DNS resolution failed for service: peer2.org1.example.com:7051 + failed to connect to all addresses。
+
+* 正在尝试使用master下的minifabric配置代入到pre-0.6中从而解决这个问题。
+
+* pre-0.6与当前master区别太大，还是希望从master入手
+
+* 重启了服务器，问题转变成了Failed to initialize/signup enclave; Failed to initialize quote in enclave constructor: INTEL SGX ERROR: Unexpected error occurred.这个问题似乎之前遇到过，之后通过重新配置pre中的设置解决了，但现在无法这样解决了。
+
+* 这个问题不是worker pool的问题，在运行singleton时也遇到了，重新配置hardware mode不起作用，目前不清楚解决办法。
+
+## 2021. 5.26
+
+* 重新配置SGX driver、PSW等最新版本后解决Failed to initialize/signup enclave; Failed to initialize quote in enclave constructor: INTEL SGX ERROR: Unexpected error occurred.但仍然报没有response的错误

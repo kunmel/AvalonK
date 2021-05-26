@@ -45,7 +45,7 @@ sealed_data_path = ".sealed/.sealed.data"
 # Service Provider ID (SPID) is a 32-digit hex string tied to the
 # enclave implementation. Replace dummy SPID with value obtained after
 # subscription to run TCS in Intel SGX HW mode.
-spid = "DEADBEEF00000000DEADBEEF00000000"
+spid = "7C8E1DA53BE2414C7D1B49A763125CE7"
 
 # ias_url is the URL of the Intel Attestation Service (IAS) server.
 ias_url = "https://api.trustedservices.intel.com/sgx/dev"
@@ -57,7 +57,7 @@ ias_url = "https://api.trustedservices.intel.com/sgx/dev"
 # IAS API key is a 32-digit hex string subscription key used for authentication
 # of requests submitted to the IAS server. Obtain the key by subscribing in
 # the portal https://api.portal.trustedservices.intel.com/
-ias_api_key = "112233445566778899aabbccddeeff00"
+ias_api_key = "956b6700a0ac4eb684ae33824ac9bbd3"
 
 # ------------------------------------------------------------
 # DCAP attestation data

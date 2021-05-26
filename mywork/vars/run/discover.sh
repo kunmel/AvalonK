@@ -10,7 +10,7 @@ discover endorsers --peerTLSCA $PEER_TLS_ROOTCERT_FILE \
   --userKey $ADMINPRIVATEKEY \
   --userCert $ADMINCERT \
   --MSP org0-example-com --channel mychannel \
-  --server peer2.org0.example.com:7051 \
+  --server peer1.org0.example.com:7051 \
   --chaincode receipt | jq '.[0]' | \
   jq 'del(.. | .Identity?)' | jq 'del(.. | .LedgerHeight?)' \
   > /vars/discover/mychannel_receipt_endorsers.json
@@ -19,4 +19,4 @@ discover config --peerTLSCA $PEER_TLS_ROOTCERT_FILE \
   --userKey $ADMINPRIVATEKEY \
   --userCert $ADMINCERT \
   --MSP org0-example-com --channel mychannel \
-  --server peer2.org0.example.com:7051 > /vars/discover/mychannel_config.json
+  --server peer1.org0.example.com:7051 > /vars/discover/mychannel_config.json
