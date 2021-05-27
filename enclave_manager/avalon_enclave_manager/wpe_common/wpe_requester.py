@@ -84,6 +84,8 @@ class WPERequester():
         workload_id = "kme-uid"
         in_data = [verification_key_nonce]
 
+        logger.info("in wpe_requester.py get_unique_verification_key")
+
         # Create session key and iv to sign work order request
         worker_encrypt = worker_encryption.WorkerEncrypt()
         session_key = worker_encrypt.generate_session_key()
@@ -125,6 +127,9 @@ class WPERequester():
                               True, for success. None, in case of errors.
         """
         workload_id = "kme-reg"
+
+        logger.info("in wpe_requester.py register_wo_processor")
+
         registration_params = {
             "unique_id": unique_verification_id,
             "proof_data": proof_data,

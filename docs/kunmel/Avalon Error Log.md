@@ -37,8 +37,6 @@ RUN apt-get install solc
 RUN python3 -c "from solcx import install_solc;install_solc('v0.5.15')"
 ```
 
-
-
 #### 2.2 RK_PUB.zip问题(在原项目5月4日的更新后改动)
 
 部署期间可能出现unzip RK_PUB.zip报错的问题，这是由于RK_PUB.zip地址已更换，在common/cpp/verify_ias_report/build_ias_certificates_cpp.sh中将其地址改为'https://community.intel.com/legacyfs/online/drupal_files/managed/7b/de/RK_PUB.zip'即可。

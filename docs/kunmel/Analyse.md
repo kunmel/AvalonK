@@ -32,6 +32,10 @@ Avalon 的默认worker类型，同时管理密钥以及工作负载。
 
 SGX编程的核心，定义了Enclave与应用之间的ECALL/OCALL。ECALL定义在trusted区域，在enclave外调用，在enclave内执行。OCALL定义在untrusted，在enclvae内调用，在enclave外执行。
 
+### SGX  aesm
+
+Intel® SGX Architectural Enclave Service Manager。主要提供了SGX Enclave启动支持，密钥配置、远程认证等服务。
+
 # Analyse
 
 ### workload分析
@@ -105,3 +109,37 @@ class WorkloadMaster : public WorkloadProcessor {
 - 可以通过在outTEEworkload下的build.sh脚本来自动化进行cmake\make\run的功能
 
 - 但暂时需要在test.cpp中修改加密文件的名称
+
+### docker compose -f
+
+* 多个-f会使后续配置文件中相同的字段覆盖之前配置文件的配置，但仅覆盖完全相同的字段
+
+* 可以通过config命令获取最终覆盖结果而不执行
+
+```
+docker-compose -f xxxx -f xxxx config
+```
+
+### 添加Log显示问题
+
+* 在普通的py文件中添加log
+
+```python
+
+logger = logging.getLogger(__name__)
+logger.info("xxxxxxxxxxxxxxxxxxx")
+```
+
+* 在不可信区域(enclave_untrusted)
+
+```cpp
+#include "log.h"
+tcf::Log(TCF_LOG_INFO,"XXXXXXXXXXXXXXXXXXXXX")
+```
+
+* 在可信区域(e.g.: trusted_worker_manager/enclave/kme)
+
+```cpp
+#include "enclave_utils.h"
+SAFE_LOG(TCF_LOG_INFO, "xxxxxxxxxxxxxxxxxxxxxxx")
+```

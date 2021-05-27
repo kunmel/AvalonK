@@ -1,0 +1,133 @@
+services:
+  avalon-enclave-manager:
+    build:
+      args:
+        ENCLAVE_TYPE: wpe
+        SGX_MODE: HW
+        WORKLOADS: echo-result;heart-disease-eval;inside-out-eval;simple-wallet
+        http_proxy: ''
+        https_proxy: ''
+        no_proxy: ''
+      context: /home/guotiezheng/avalon-pre-release-v0.6
+      dockerfile: ./enclave_manager/Dockerfile
+    command: "bash -c \"\n  mv /project/avalon/wpe_mr_enclave.txt /shared-pool-1\n\
+      \  enclave_manager --lmdb_url http://avalon-lmdb:9090 --kme_listener_url http://avalon-kme:1948\n\
+      \  tail -f /dev/null\n\"\n"
+    container_name: avalon-wpe
+    depends_on:
+    - avalon-kme
+    - avalon-listener
+    - avalon-lmdb
+    devices:
+    - /dev/isgx:/dev/isgx
+    environment:
+      http_proxy: null
+      https_proxy: null
+      no_proxy: null
+    expose:
+    - '5555'
+    image: avalon-sgx-enclave-manager-wpe-dev
+    volumes:
+    - pool-1:/shared-pool-1:rw
+    - /var/run/aesmd/aesm.socket:/var/run/aesmd/aesm.socket:rw
+  avalon-kme:
+    build:
+      args:
+        ENCLAVE_TYPE: kme
+        SGX_MODE: HW
+        http_proxy: ''
+        https_proxy: ''
+        no_proxy: ''
+      context: /home/guotiezheng/avalon-pre-release-v0.6
+      dockerfile: ./enclave_manager/Dockerfile
+    command: "bash -c \"\n  while true;\n    do\n      if [ -e /shared-pool-1/wpe_mr_enclave.txt\
+      \ ];\n        then cp /shared-pool-1/wpe_mr_enclave.txt /project/avalon/wpe_mr_enclave.txt;\n\
+      \        break;\n      fi;\n      sleep 1;\n  done;\n  enclave_manager --lmdb_url\
+      \ http://avalon-lmdb:9090 --bind http://avalon-kme:1948\n  tail -f /dev/null\n\
+      \"\n"
+    container_name: avalon-kme
+    depends_on:
+    - avalon-listener
+    - avalon-lmdb
+    devices:
+    - /dev/isgx:/dev/isgx
+    environment:
+      http_proxy: null
+      https_proxy: null
+      no_proxy: null
+    expose:
+    - '1948'
+    image: avalon-sgx-enclave-manager-kme-dev
+    volumes:
+    - pool-1:/shared-pool-1:rw
+    - /var/run/aesmd/aesm.socket:/var/run/aesmd/aesm.socket:rw
+  avalon-listener:
+    build:
+      args:
+        http_proxy: ''
+        https_proxy: ''
+        no_proxy: ''
+      context: /home/guotiezheng/avalon-pre-release-v0.6
+      dockerfile: ./listener/Dockerfile
+    command: "bash -c \"\n  avalon_listener --bind http://avalon-listener:1947 --lmdb_url\
+      \ http://avalon-lmdb:9090\n  tail -f /dev/null\n  \"\n"
+    container_name: avalon-listener
+    depends_on:
+    - avalon-lmdb
+    environment:
+      http_proxy: null
+      https_proxy: null
+      no_proxy: null
+    expose:
+    - '1947'
+    - '5555'
+    image: avalon-listener-dev
+  avalon-lmdb:
+    build:
+      args:
+        http_proxy: ''
+        https_proxy: ''
+        no_proxy: ''
+      context: /home/guotiezheng/avalon-pre-release-v0.6
+      dockerfile: ./shared_kv_storage/Dockerfile
+    command: "bash -c \"\n  kv_storage --bind http://avalon-lmdb:9090\n  tail -f /dev/null\n\
+      \"\n"
+    container_name: avalon-lmdb
+    environment:
+      http_proxy: null
+      https_proxy: null
+      no_proxy: null
+    expose:
+    - '9090'
+    image: avalon-lmdb-dev
+  avalon-shell:
+    build:
+      args:
+        DISPLAY: :0
+        XAUTHORITY: ~/.Xauthority
+        http_proxy: ''
+        https_proxy: ''
+        no_proxy: ''
+      context: /home/guotiezheng/avalon-pre-release-v0.6
+      dockerfile: ./docker/Dockerfile
+    command: 'bash -c "tail -f /dev/null"
+
+      '
+    container_name: avalon-shell
+    depends_on:
+    - avalon-enclave-manager
+    - avalon-listener
+    environment:
+      DISPLAY: :0
+      http_proxy: null
+      https_proxy: null
+      no_proxy: null
+    image: avalon-shell-dev
+    stop_signal: SIGKILL
+    volumes:
+    - /home/guotiezheng/.Xauthority:/root/.Xauthority:rw
+    - /tmp/.X11-unix:/tmp/.X11-unix:rw
+version: '3.5'
+volumes:
+  pool-1: {}
+

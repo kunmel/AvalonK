@@ -102,6 +102,7 @@ class KeyManagementEnclaveManager(EnclaveManager):
                 ext_data
             )
             wo_response = wo_request.execute()
+            logger.info("_execute_work_order Done")
             try:
                 json_response = json.dumps(wo_response, indent=4)
                 logger.info("Response from enclave %s", json_response)
@@ -172,6 +173,7 @@ class KeyManagementEnclaveManager(EnclaveManager):
         Returns :
             @returns response - A jrpc response
         """
+        logger.info("in kme_enclave_manager.py GetUniqueVerificationKey")
         try:
             wo_request = get_request_json("GetUniqueVerificationKey",
                                           random.randint(0, 100000))
@@ -210,12 +212,15 @@ class KeyManagementEnclaveManager(EnclaveManager):
         Returns :
             @returns response - A jrpc response
         """
+        logger.info("in kme_enclave_manager.py RegisterWorkOrderProcessor")
+
         wo_request = get_request_json("RegisterWorkOrderProcessor",
                                       random.randint(0, 100000))
         wo_request["params"] = params
         wo_response = self._execute_work_order(json.dumps(wo_request), "")
         wo_response_json = json.loads(wo_response)
 
+        logger.info("kme_enclave_manager.py RegisterWorkOrderProcessor Done")
         if "result" in wo_response_json:
             return wo_response_json["result"]
         else:

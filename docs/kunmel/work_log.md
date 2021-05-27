@@ -131,3 +131,21 @@
 ## 2021. 5.26
 
 * 重新配置SGX driver、PSW等最新版本后解决Failed to initialize/signup enclave; Failed to initialize quote in enclave constructor: INTEL SGX ERROR: Unexpected error occurred.但仍然报没有response的错误
+* 大迷惑大迷惑。重新启动fabric网络、配置worker pool后，竟然可以对kme-worker-1发起请求了。到底经历了什么，WDNMD。
+* 阅读avalon-arch.pdf
+
+## 2021.5.27
+
+* 没什么可迷惑的，在fabric中使用的都是不带sgx的yaml文件，应该是没有使用HW模式，使用了SIM模式，所以没有问题。因此问题还是出在sgx配置？
+
+* 在avalon/scripts添加了shutdown脚本，用于删除基本创建的docker。
+
+* 在原testfabric文件中是只采用了sim模式，进行了修改。
+
+* 测试fabric模式能够正常启动singleton HW mode
+
+* 0.6版本能起worker pool因此应该不是sgx问题(?)
+
+* 发现在log中WPE\KME之前通信过，使用了GetUniqueVerificationKey方法且成功了，之后再次调用RegisterWorkerorderProcessor时失败，可能是方法内部问题？
+  
+* 添加了部分log显示语句进行调试，发现两个方法在执行过程的前半部分都是一致的，只不过内含在传送的字符串中的方法名不一样。暂时还没有找到两者不一样的地方执行的是什么。

@@ -87,6 +87,20 @@ follow these steps:
    This ``worker_id`` can either be the command line argument passed in to the enclave manager (Singleton or KME)
    or in the absence of it, ``worker_id`` in the corresponding config file in `config <../config>`_ directory.
 
+   此处使用的都是SIM模式，因为其没有使用带-sgx的yaml文件，如果希望启动HW模式需要使用如下命令：
+  
+   To start singleton worker:
+   ..code::sh
+
+      sudo docker-compose -f docker-compose.yaml -f docker-compose-sgx.yaml -f docker/compose/avalon-fabric.yaml up -d --build
+
+   To start worker pool (not sure):
+   ..code::sh
+      
+      MAKECLEAN=0 sudo docker-compose -f docker-compose.yaml -f docker/compose/avalon-pool.yaml -f docker/compose/avalon-pool-sgx.yaml  -f docker/compose/avalon-fabric.yam up --build
+
+   
+
 7. To stop the Fabric network run this command:
 
    .. code:: sh

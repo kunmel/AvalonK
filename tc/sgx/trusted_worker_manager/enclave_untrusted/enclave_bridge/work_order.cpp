@@ -57,6 +57,7 @@ tcf_err_t WorkOrderHandler::HandleWorkOrderRequest(
         // Get the enclave id for passing into the ecall
         sgx_enclave_id_t enclaveid = g_Enclave[enclaveIndex].GetEnclaveId();
 
+        tcf::Log(TCF_LOG_INFO,"in work_order.cpp-1");
         tcf_err_t presult = TCF_SUCCESS;
         sgx_status_t sresult = tcf::sgx_util::CallSgx(
                 [
@@ -78,6 +79,7 @@ tcf_err_t WorkOrderHandler::HandleWorkOrderRequest(
                         &response_size);
                     return tcf::error::ConvertErrorStatus(sresult_inner, presult);
                 });
+        tcf::Log(TCF_LOG_INFO,"in work_order.cpp-2，CallSgx Done");
         tcf::error::ThrowSgxError(sresult,
             "Intel SGX enclave call failed (ecall_HandleWorkOrderRequest)");
         g_Enclave[enclaveIndex].ThrowTCFError(presult);

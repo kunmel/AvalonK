@@ -60,11 +60,9 @@ tcf_err_t ecall_HandleWorkOrderRequest(const uint8_t* inSerializedRequest,
             wo_processor.ext_work_order_data = \
                 std::string((const char*) inWorkOrderExtData);
         }
-
         std::string wo_string(request.begin(), request.end());
         last_serialized_response = wo_processor.Process(
             enclaveData, wo_string);
-
         // Save the response and return the size of the buffer required for it
         (*outSerializedResponseSize) = last_serialized_response.size();
 

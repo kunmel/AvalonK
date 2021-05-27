@@ -46,16 +46,18 @@ class SgxWorkOrderRequest(object):
     def execute(self):
         serialized_byte_array = crypto.string_to_byte_array(self.work_order)
         encrypted_request = crypto.byte_array_to_base64(serialized_byte_array)
-
+        logger.info("------------------------sgx_work_order_request1------------------------------------")
         try:
             encoded_encrypted_response = self.enclave.HandleWorkOrderRequest(
                 encrypted_request, self.ext_data)
+            logger.info("------------------------sgx_work_order_request2------------------------------------")
             assert encoded_encrypted_response
         except Exception as err:
+            logger.info("------------------------sgx_work_order_request3------------------------------------")
             logger.exception('workorder request invocation failed: %s',
                              str(err))
             raise
-
+        logger.info("------------------------sgx_work_order_request4------------------------------------")
         try:
             decrypted_response = crypto.base64_to_byte_array(
                 encoded_encrypted_response)
