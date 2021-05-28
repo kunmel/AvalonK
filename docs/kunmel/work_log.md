@@ -147,5 +147,27 @@
 * 0.6版本能起worker pool因此应该不是sgx问题(?)
 
 * 发现在log中WPE\KME之前通信过，使用了GetUniqueVerificationKey方法且成功了，之后再次调用RegisterWorkerorderProcessor时失败，可能是方法内部问题？
-  
+
 * 添加了部分log显示语句进行调试，发现两个方法在执行过程的前半部分都是一致的，只不过内含在传送的字符串中的方法名不一样。暂时还没有找到两者不一样的地方执行的是什么。
+
+## 2021.5.28
+
+* 分析到kme_workload_plug-in.cpp中的register函数，但其与0.6版本没有区别，可能错误不在这里。
+
+* 在dockerfile中添加了参数、修改了command，使容器内部能够生成core文件，但目前生成的core文件指向的函数名是？？
+
+* 尝试在编译选项中加入-g来解决上述问题（不清楚是不是这个问题）
+
+* 暂时放弃core文件调试，使用acfe89b7版本的代码进行实验，发现能够成功创建worker pool，对比分析此版本与master区别。两版本主要差别在于一些graphene的配置、dcap版本的配置、将base_enclave_manager的部分代码打包为函数以及下面的几个文件修改。猜测问题可能存在于下面三个文件的修改中：
+  
+  * tc/sgx/trusted_worker_manager/enclave/epid_signup_helper.cpp
+  
+  * tc/sgx/trusted_worker_manager/enclave/signup_helper.cpp
+  
+  * tc/sgx/trusted_worker_manager/enclave/kme/ext_work_order_info_kme.cpp
+
+* acfe89b7版本的fabric配置出错，但猜测应该是之前的没有删除的原因
+  
+  
+  
+  

@@ -125,7 +125,6 @@ docker-compose -f xxxx -f xxxx config
 * 在普通的py文件中添加log
 
 ```python
-
 logger = logging.getLogger(__name__)
 logger.info("xxxxxxxxxxxxxxxxxxx")
 ```
@@ -142,4 +141,21 @@ tcf::Log(TCF_LOG_INFO,"XXXXXXXXXXXXXXXXXXXXX")
 ```cpp
 #include "enclave_utils.h"
 SAFE_LOG(TCF_LOG_INFO, "xxxxxxxxxxxxxxxxxxxxxxx")
+```
+
+### 在容器中生成core问题（docker-compose）
+
+首先在相应yaml文件中添加privileged:true,使其能够获得ROOT权限
+
+然后在command中添加：
+
+```bash
+ulimit -c unlimited
+sudo sh -c 'echo core > /proc/sys/kernel/core_pattern'
+```
+
+在文件 CMakeLists.txt添加下列语句来使其将信息加入到core文件中(但加过之后还是出现？？)：
+
+```
+add_definitions("-Wall -g")
 ```

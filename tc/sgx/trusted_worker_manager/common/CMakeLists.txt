@@ -18,7 +18,9 @@ find_package(PkgConfig REQUIRED)
 option(UNTRUSTED_ONLY "Build only untrusted components" OFF)
 
 SET(TCF_TOP_DIR "${CMAKE_CURRENT_SOURCE_DIR}/../../../..")
-
+# XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+add_definitions("-Wall -g")
+# XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 SET(SGX_SDK "$ENV{SGX_SDK}")
 if("${SGX_SDK} " STREQUAL " ")
     message(FATAL_ERROR "SGX_SDK environment variable not defined!")

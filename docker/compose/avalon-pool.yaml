@@ -25,6 +25,7 @@ services:
 
   avalon-kme:
     container_name: avalon-kme
+    privileged: true
     image: avalon-enclave-manager-kme-dev
     build:
       context: .
@@ -49,6 +50,9 @@ services:
       - 1948
     command: |
       bash -c "
+      ulimit -c unlimited
+      ulimit -s unlimited
+      sh -c 'echo core > /proc/sys/kernel/core_pattern'
         if [ $CLEAN_SEALED_DATA = 1 ]; then rm -f /project/avalon/.sealed/.sealed.data*; fi;
         while true;
           do
@@ -67,6 +71,7 @@ services:
 
   avalon-enclave-manager:
     container_name: avalon-wpe
+    privileged: true
     image: avalon-enclave-manager-wpe-dev
     build:
       context: .
@@ -80,6 +85,9 @@ services:
       - pool-1:/shared-pool-1
     command: |
       bash -c "
+        ulimit -c unlimited
+        ulimit -s unlimited
+        sh -c 'echo core > /proc/sys/kernel/core_pattern'
         mv /project/avalon/wpe_mr_enclave.txt /shared-pool-1
         enclave_manager --lmdb_url http://avalon-lmdb:9090 --kme_listener_url http://avalon-kme:1948
         tail -f /dev/null

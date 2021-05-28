@@ -374,3 +374,7 @@ WORKDIR /project/avalon/enclave_manager
 RUN echo "Build and Install avalon enclave manager" \
   && make && make install
 
+# RUN ulimit -c unlimited
+# RUN apt-get update
+# RUN apt-get install sudo
+# RUN sudo sh -c 'echo core > /proc/sys/kernel/core_pattern'

@@ -1,0 +1,49 @@
+2021-05-28 07:49:40,465 - INFO - ******* Hyperledger Avalon Generic client *******
+2021-05-28 07:49:40,465 - INFO - INITIALIZING network_config
+Init client with profile=/project/avalon/sdk/avalon_sdk/connector/blockchains/fabric/network.json
+2021-05-28 07:49:40,465 - DEBUG - Init client with profile=/project/avalon/sdk/avalon_sdk/connector/blockchains/fabric/network.json
+create org with name=example.com
+2021-05-28 07:49:40,466 - DEBUG - create org with name=example.com
+create org with name=org0.example.com
+2021-05-28 07:49:40,485 - DEBUG - create org with name=org0.example.com
+create org with name=org1.example.com
+2021-05-28 07:49:40,486 - DEBUG - create org with name=org1.example.com
+create ca with name=ca1.org0.example.com
+2021-05-28 07:49:40,487 - DEBUG - create ca with name=ca1.org0.example.com
+create ca with name=ca1.org1.example.com
+2021-05-28 07:49:40,487 - DEBUG - create ca with name=ca1.org1.example.com
+Import orderers = dict_keys(['orderer1.example.com', 'orderer2.example.com', 'orderer3.example.com'])
+2021-05-28 07:49:40,487 - DEBUG - Import orderers = dict_keys(['orderer1.example.com', 'orderer2.example.com', 'orderer3.example.com'])
+Import peers = dict_keys(['peer1.org0.example.com', 'peer2.org0.example.com', 'peer1.org1.example.com', 'peer2.org1.example.com'])
+2021-05-28 07:49:40,488 - DEBUG - Import peers = dict_keys(['peer1.org0.example.com', 'peer2.org0.example.com', 'peer1.org1.example.com', 'peer2.org1.example.com'])
+New channel with name = mychannel
+2021-05-28 07:49:40,489 - DEBUG - New channel with name = mychannel
+2021-05-28 07:49:40,489 - INFO - DISCOVERY: adding channel peers query
+2021-05-28 07:49:40,489 - INFO - DISCOVERY: adding config query
+Traceback (most recent call last):
+  File "./generic_client.py", line 390, in <module>
+    Main()
+  File "./generic_client.py", line 264, in Main
+    parser.get_blockchain_type())
+  File "/project/avalon/examples/apps/generic_client/proxy_model_generic_client.py", line 46, in __init__
+    self._worker_instance = FabricWorkerRegistryImpl(self._config)
+  File "/usr/local/lib/python3.6/dist-packages/avalon_sdk/connector/blockchains/fabric/fabric_worker_registry.py", line 52, in __init__
+    self.__fabric_wrapper = FabricWrapper(config)
+  File "/usr/local/lib/python3.6/dist-packages/avalon_sdk/connector/blockchains/fabric/fabric_wrapper.py", line 73, in __init__
+    self.__peername, 'Admin')
+  File "/usr/local/lib/python3.6/dist-packages/avalon_sdk/connector/blockchains/fabric/tx_committer.py", line 40, in __init__
+    org_name, peer_name, user_name)
+  File "/usr/local/lib/python3.6/dist-packages/avalon_sdk/connector/blockchains/fabric/base.py", line 75, in __init__
+    self._user, peer, self._channel_name))
+  File "/usr/lib/python3.6/asyncio/base_events.py", line 484, in run_until_complete
+    return future.result()
+  File "/usr/local/lib/python3.6/dist-packages/hfc/fabric/client.py", line 169, in init_with_discovery
+    local=False)
+  File "/usr/local/lib/python3.6/dist-packages/aiogrpc/channel.py", line 40, in __call__
+    return await fut
+grpc._channel._MultiThreadedRendezvous: <_MultiThreadedRendezvous of RPC that terminated with:
+	status = StatusCode.UNAVAILABLE
+	details = "DNS resolution failed for service: peer2.org1.example.com:7051"
+	debug_error_string = "{"created":"@1622188180.490712492","description":"Resolver transient failure","file":"src/core/ext/filters/client_channel/client_channel.cc","file_line":1361,"referenced_errors":[{"created":"@1622188180.490711448","description":"DNS resolution failed for service: peer2.org1.example.com:7051","file":"src/core/ext/filters/client_channel/resolver/dns/c_ares/dns_resolver_ares.cc","file_line":362,"grpc_status":14,"referenced_errors":[{"created":"@1622188180.490699488","description":"C-ares status is not ARES_SUCCESS qtype=A name=peer2.org1.example.com is_balancer=0: Domain name not found","file":"src/core/ext/filters/client_channel/resolver/dns/c_ares/grpc_ares_wrapper.cc","file_line":724}]}]}"
+>
+

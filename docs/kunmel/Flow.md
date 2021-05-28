@@ -125,3 +125,5 @@ singleton_enclave_manager.py中定义了SingletonEnclaveManager
 * work_order_wrap.cpp|wo_handle.HandleWorkOrderRequest
 
 * work_order.cpp|HandleWorkOrderRequest
+
+* 跳转到kme_workload_plug_in.cpp|register
